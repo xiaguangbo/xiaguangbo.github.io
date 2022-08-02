@@ -4,7 +4,7 @@
 */
 
 var sidebarTxt = ''; // _sidebar.md 的内容，可以预先放一些东西，比如颜文字什么的
-var docsDirName = '/docs'; // 文档的目录名
+var docsDirName = '/book'; // 文档的目录名
 var jump = ''; // docsDirName 与脚本的相对位置。放到根目录下就不需要了
 var prefix_char = '_'; // 分割前缀的字符，例如 1_xxx.md
 var suffix_char = '.'; // 分割后缀的字符，例如 1_xxx.md
