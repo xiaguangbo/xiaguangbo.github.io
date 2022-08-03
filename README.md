@@ -2,6 +2,5 @@
 
 > An awesome project.
 
-人
-
+人  
 people

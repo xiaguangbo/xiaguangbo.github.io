@@ -1,5 +1,5 @@
 /*
-自动在 docsDirName 所处的目录下生成 _sidebar.md，需手动运行（类似node ./sidebar_auto.js，相对地址绝对地址都行）
+自动在 docsDirName 所处的目录下生成 _sidebar.md，需手动运行（类似node sidebar_generate.js，相对地址绝对地址都行）
 注意！此脚本会覆盖同名文件
 */
 
