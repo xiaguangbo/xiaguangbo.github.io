@@ -1,13 +1,13 @@
-- **嵌入式**
-  - **rk3399**
-    - [**序**](/book/嵌入式\rk3399\1_序.md)
-- **通用工具**
-  - **docker**
-    - [**序**](/book/通用工具\docker\1_序.md)
-    - [**功能**](/book/通用工具\docker\2_功能.md)
-  - **docsify**
-    - [**序**](/book/通用工具\docsify\1_序.md)
-  - **git**
-    - [**序**](/book/通用工具\git\1_序.md)
-    - [**功能**](/book/通用工具\git\2_功能.md)
-    - [**问题**](/book/通用工具\git\3_问题.md)
+- 嵌入式
+  - rk3399
+    - [序](book/嵌入式/rk3399/1_序.md)
+- 通用工具
+  - docker
+    - [序](book/通用工具/docker/1_序.md)
+    - [功能](book/通用工具/docker/2_功能.md)
+  - docsify
+    - [序](book/通用工具/docsify/1_序.md)
+  - git
+    - [序](book/通用工具/git/1_序.md)
+    - [功能](book/通用工具/git/2_功能.md)
+    - [问题](book/通用工具/git/3_问题.md)
