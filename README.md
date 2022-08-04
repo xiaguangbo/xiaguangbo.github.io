@@ -2,5 +2,4 @@
 
 > An awesome project.
 
-人  
-people
+通用中间层
