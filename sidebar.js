@@ -12,8 +12,8 @@ const keepEmptyDir = true //是否为空文件夹生成目录
 const fs = require('fs')
 
 let sidebar_string = sidebar_generate(path_get(docsPath, "/"), "", "")
-fs.writeFile(__dirname + '/_sidebar.md', sidebar_string, { encoding: 'utf8' }, err => { });
 console.log(sidebar_string)
+fs.writeFile(__dirname + '/_sidebar.md', sidebar_string, { encoding: 'utf8' }, err => { });
 
 function sidebar_generate(obj, _dir, tab) {
     let temp = ""
