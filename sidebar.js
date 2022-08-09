@@ -1,4 +1,4 @@
-const book_directory_name = "book";
+const book_directory_name = "record";
 const prefix_char = '_'; // 分割前缀的字符，例如 1_abc.md，去掉“1_”
 const suffix_char = '.'; // 分割后缀的字符，例如 1_abc.md，去掉“.md”
 const blacklist = [ // 需要忽略的
