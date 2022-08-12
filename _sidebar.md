@@ -1,4 +1,6 @@
 - ubox
   - [序](record/ubox/1_序.md)
+  - fpga
+    - [序](record/ubox/fpga/1_序.md)
   - rk3399
     - [序](record/ubox/rk3399/1_序.md)
