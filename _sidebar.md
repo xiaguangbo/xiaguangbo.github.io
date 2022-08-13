@@ -1,6 +1,9 @@
-- ubox
-  - [序](record/ubox/1_序.md)
-  - fpga
-    - [序](record/ubox/fpga/1_序.md)
-  - rk3399
-    - [序](record/ubox/rk3399/1_序.md)
+- other
+  - tool
+    - [序](record/other/tool/1_序.md)
+- project
+  - ubox
+    - fpga
+      - [序](record/project/ubox/fpga/1_序.md)
+    - rk3399
+      - [序](record/project/ubox/rk3399/1_序.md)
