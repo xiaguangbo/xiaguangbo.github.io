@@ -1,4 +1,6 @@
 - other
+  - linux
+    - [序](record/other/linux/1_序.md)
   - tool
     - [序](record/other/tool/1_序.md)
 - project
