@@ -1,11 +1,11 @@
 - other
   - linux
-    - [序](record/other/linux/1_序.md)
+    - [序](documentation/other/linux/1_序.md)
   - tool
-    - [序](record/other/tool/1_序.md)
+    - [序](documentation/other/tool/1_序.md)
 - project
   - ubox
     - fpga
-      - [序](record/project/ubox/fpga/1_序.md)
+      - [序](documentation/project/ubox/fpga/1_序.md)
     - rk3399
-      - [序](record/project/ubox/rk3399/1_序.md)
+      - [序](documentation/project/ubox/rk3399/1_序.md)

@@ -1,4 +1,5 @@
-const book_directory_name = "record";
+// node sidebar.js
+const markdown_directory_name = "documentation";
 const prefix_char = '_'; // 分割前缀的字符，例如 1_abc.md，去掉“1_”
 const suffix_char = '.'; // 分割后缀的字符，例如 1_abc.md，去掉“.md”
 const blacklist = [ // 需要忽略的
@@ -6,10 +7,11 @@ const blacklist = [ // 需要忽略的
     // 'img',
     // "CNAME", "README.md", "node_modules", 'dist', '.css', '.js'
 ]
-const docsPath = __dirname + "/" + book_directory_name // 根据该文件夹内的 .md 的路径生成 _sidebar.md
+const docsPath = __dirname + "/" + markdown_directory_name // 根据该文件夹内的 .md 的路径生成 _sidebar.md
 const keepEmptyDir = true //是否为空文件夹生成目录
 
-const fs = require('fs')
+const fs = require('fs');
+const { default: nodeTest } = require('node:test');
 
 let sidebar_string = sidebar_generate(path_get(docsPath, "/"), "", "")
 console.log(sidebar_string)
@@ -24,7 +26,7 @@ function sidebar_generate(obj, _dir, tab) {
     for (const key in obj) {
         let item = obj[key]
         if (typeof item == "string") {
-            temp += tab + "- [" + key + "](" + book_directory_name + "/" + item + ")\n"
+            temp += tab + "- [" + key + "](" + markdown_directory_name + "/" + item + ")\n"
         } else if (typeof item == "object") {
             if (keepEmptyDir == false && Object.keys(item).length < 1) { continue }
             temp += sidebar_generate(item, key, tab)
