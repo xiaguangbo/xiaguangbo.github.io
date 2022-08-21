@@ -1,5 +1,5 @@
 // node sidebar.js
-const markdown_directory_name = "documentation";
+const markdown_directory_name = "document";
 const prefix_char = '_'; // 分割前缀的字符，例如 1_abc.md，去掉“1_”
 const suffix_char = '.'; // 分割后缀的字符，例如 1_abc.md，去掉“.md”
 const blacklist = [ // 需要忽略的

@@ -1,5 +1,5 @@
 - ubox
   - fpga
-    - [序](documentation/ubox/fpga/1_序.md)
+    - [序](document/ubox/fpga/1_序.md)
   - rk3399
-    - [序](documentation/ubox/rk3399/1_序.md)
+    - [序](document/ubox/rk3399/1_序.md)
