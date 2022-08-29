@@ -11,7 +11,6 @@ const docsPath = __dirname + "/" + markdown_directory_name // 根据该文件夹
 const keepEmptyDir = true //是否为空文件夹生成目录
 
 const fs = require('fs');
-const { default: nodeTest } = require('node:test');
 
 let sidebar_string = sidebar_generate(path_get(docsPath, "/"), "", "")
 console.log(sidebar_string)
@@ -75,7 +74,7 @@ function title_get(path, md) {
                 title = data[i].replace(/^(\s*#){1}\s+/, "")
             else {
                 var path_l = require('path')
-                title = remove_prefix_suffix(path_l.basename(path)) // 取路径最后的字符串并处理
+                title = remove_prefix_suffix(path_l.basename(path)) // 取路径最后的字符串并去除前后缀
             }
 
             break
