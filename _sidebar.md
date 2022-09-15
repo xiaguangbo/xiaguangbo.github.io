@@ -1,6 +1,2 @@
-- arm_rk3399
-  - [序](document/arm_rk3399/1_序.md)
-- tool_ubuild
-  - [序](document/tool_ubuild/1_序.md)
-- tool_uetool
-  - [序](document/tool_uetool/1_序.md)
+- arm_rk3588
+  - [序](document/arm_rk3588/1_序.md)
