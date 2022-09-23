@@ -1,2 +1,9 @@
-- arm_rk3588
-  - [序](document/arm_rk3588/1_序.md)
+- project
+  - universal_terminal_device
+    - cpu
+      - arm_rk3588
+        - [开发环境](document/project/universal_terminal_device/cpu/arm_rk3588/1_开发环境.md)
+    - fpga
+      - xilinx_xc7k325
+        - [开发环境](document/project/universal_terminal_device/fpga/xilinx_xc7k325/1_开发环境.md)
+    - [README](document/project/universal_terminal_device/readme.md)
