@@ -85,16 +85,22 @@ function title_get(path, md) {
 
 // 去掉前缀和后缀
 function remove_prefix_suffix(string) {
-    var prefix_number = string.indexOf(prefix_char) // 前缀的位置
+    
+    var prefix_number
+    if (string[0] >= '0' && string[0] <= '9') // 如果第一个字符是数字
+        prefix_number = string.indexOf(prefix_char) // 前缀的位置
+    else
+        prefix_number = -1
+
     var suffix_number = string.lastIndexOf(suffix_char) // 后缀的位置
 
     // 去掉序号和后缀
     if (prefix_number >= 0 && suffix_number >= 0) // 前后缀都有
-        return string.substring(prefix_number + 1, suffix_number);
+        return string.substring(prefix_number + 1, suffix_number)
     else if (prefix_number >= 0 && suffix_number == -1) // 只有前缀
-        return string.substring(prefix_number + 1);
+        return string.substring(prefix_number + 1)
     else if (prefix_number == -1 && suffix_number >= 0) // 只有后缀
-        return string.substring(0, suffix_number);
+        return string.substring(0, suffix_number)
     else // 没有前后缀
-        return string;
+        return string
 }

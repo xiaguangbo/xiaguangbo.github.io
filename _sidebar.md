@@ -1,9 +1,6 @@
-- project
-  - universal_terminal_device
-    - cpu
-      - arm_rk3588
-        - [开发环境](document/project/universal_terminal_device/cpu/arm_rk3588/1_开发环境.md)
-    - fpga
-      - xilinx_xc7k325
-        - [开发环境](document/project/universal_terminal_device/fpga/xilinx_xc7k325/1_开发环境.md)
-    - [README](document/project/universal_terminal_device/readme.md)
+- universal_terminal_device
+  - [README](document/universal_terminal_device/readme.md)
+  - rockchip_rk3588
+    - [开发环境](document/universal_terminal_device/rockchip_rk3588/1_开发环境.md)
+  - xilinx_xc7k325t
+    - [开发环境](document/universal_terminal_device/xilinx_xc7k325t/1_开发环境.md)
