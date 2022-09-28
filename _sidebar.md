@@ -20,6 +20,8 @@
       - [README](document/tool/multiplatform/docker/readme.md)
     - docsify
       - [README](document/tool/multiplatform/docsify/readme.md)
+    - git
+      - [README](document/tool/multiplatform/git/readme.md)
     - node
       - [README](document/tool/multiplatform/node/readme.md)
     - tauri
