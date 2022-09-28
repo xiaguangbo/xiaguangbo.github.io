@@ -1,6 +1,33 @@
-- universal_terminal_device
-  - [README](document/universal_terminal_device/readme.md)
-  - rockchip_rk3588
-    - [开发环境](document/universal_terminal_device/rockchip_rk3588/1_开发环境.md)
-  - xilinx_xc7k325t
-    - [开发环境](document/universal_terminal_device/xilinx_xc7k325t/1_开发环境.md)
+- embedded
+  - rockchip
+    - rk3588
+      - [README](document/embedded/rockchip/rk3588/readme.md)
+  - xilinx
+    - xc7k325t
+      - [README](document/embedded/xilinx/xc7k325t/readme.md)
+- tool
+  - linux
+    - distributor
+      - ubuntu
+        - [README](document/tool/linux/distributor/ubuntu/readme.md)
+    - package_management
+      - apt
+        - [README](document/tool/linux/package_management/apt/readme.md)
+      - dnf
+        - [README](document/tool/linux/package_management/dnf/readme.md)
+  - multiplatform
+    - docker
+      - [README](document/tool/multiplatform/docker/readme.md)
+    - docsify
+      - [README](document/tool/multiplatform/docsify/readme.md)
+    - node
+      - [README](document/tool/multiplatform/node/readme.md)
+    - tauri
+      - [README](document/tool/multiplatform/tauri/readme.md)
+    - ventoy
+      - [README](document/tool/multiplatform/ventoy/readme.md)
+    - vmware
+      - [README](document/tool/multiplatform/vmware/readme.md)
+  - windows
+    - wtga
+      - [README](document/tool/windows/wtga/readme.md)

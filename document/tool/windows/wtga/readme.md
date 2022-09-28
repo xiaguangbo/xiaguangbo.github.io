@@ -1,0 +1,1 @@
+制作 windows vhdx 系统后需要启动一次才能放到 ventoy 里启动
