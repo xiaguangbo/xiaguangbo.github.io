@@ -1,33 +1,27 @@
-## 在 docker 里使用 ubuntu 18.04 开发
+在 docker 里使用 ubuntu 18.04 开发
 
-### 准备软件
+## sdk_linux
 
-1. 安装软件
+### 准备包
 
-    ```
-    sudo apt install repo git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler ncurses-dev
-    ```
+官方说明的包：
+```
+sudo apt install repo git ssh make gcc libssl-dev liblz4-tool expect g++ patchelf chrpath gawk texinfo chrpath diffstat binfmt-support qemu-user-static live-build bison flex fakeroot cmake gcc-multilib g++-multilib unzip device-tree-compiler ncurses-dev
+```
 
-    需要补充的软件包：
-    ```
-    p7zip bc time rsync
-    ```
+需要补充的包：
+```
+sudo apt install p7zip-full bc time rsync
+```
 
 ### 准备文件
 
-1. 将下载的文件复制到 ubuntu 里
-
-    ```
-    docker cp C:\xiaguangbo\other\编程\嵌入式\rockchip\rk3588\sdk_linux ubuntu_container:/home/xiaguangbo/
-    ```
-
-    在 windows 下执行
-
+1. 将文件复制进来
 2. 解压、更新
 
     ```
     cd ~/sdk_linux
-    sudo 7zr x rk3588_repo_sdk_v0.1.0a.7z
+    sudo 7z x rk3588_repo_sdk_v0.1.0a.7z
     cd rk3588
     sudo .repo/repo/repo sync -l
     sudo .repo/repo/repo start rk3588/firefly --all
@@ -36,19 +30,14 @@
     sudo ./update.sh
     ```
 
-    update.sh 里的 7z 命令要改成 7zr
-
 3. 其他
 
     ```
     sudo rm -rf rk3588-v*
-    ```
-    
-    ```
     sudo mkdir rockdev
     ```
 
-## 编译
+### 编译
 
 1. 配置
 
@@ -70,3 +59,37 @@
     ```
     docker cp ubuntu_container:/home/xiaguangbo/sdk_linux/rk3588/rockdev/pack C:\Users\16175\Downloads
     ```
+
+## npu
+
+### 准备包
+
+官方说明的包：
+```
+sudo apt install python3 python3-dev python3-pip libxslt1-dev zlib1g-dev libglib2.0 libsm6 libgl1-mesa-glx libprotobuf-dev gcc
+```
+
+需要补充的包：
+```
+sudo apt install p7zip-full
+```
+
+### 准备文件
+
+1. 将文件复制进来
+2. 解压
+
+    ```
+    7z x rknn-toolkit2-master.zip -orknn-toolkit2-master
+    7z x rknpu2-master.zip -orknpu2-master
+    ```
+
+### 准备包
+
+```
+cd ~/npu/rknn-toolkit2-master
+python3 -m pip install --upgrade pip
+pip3 install numpy scikit-build
+pip3 install -r doc/requirements_cp36-1.4.0.txt
+pip3 install package/rknn_toolkit2-1.4.0_22dcfef4-cp36-cp36m-linux_x86_64.whl
+```

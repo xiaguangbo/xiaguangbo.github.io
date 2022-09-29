@@ -16,3 +16,5 @@
 - 运行容器：sudo docker start container_name
 - 进入容器：sudo docker exec -it container_name bash  
     bash：进入容器后执行 bash，一个终端程序。这样才能正常使用终端
+
+- 停止容器：sudo docker stop container_name

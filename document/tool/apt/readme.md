@@ -2,7 +2,7 @@
 - 更新所有包：sudo apt upgrade
 - 搜索包：sudo apt-cache search package_name
 - 安装包：sudo apt install package_name
-- 更换包源：
+- 更换包源
 
     1. 备份：sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup
     2. 安装包：sudo apt install ca-certificates

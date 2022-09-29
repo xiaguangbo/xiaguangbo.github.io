@@ -2,7 +2,7 @@
 - 更新所有包：sudo dnf upgrade
 - 搜索包：sudo dnf search package_name
 - 安装包：sudo dnf install package_name
-- 更换软件源：
+- 更换包源
 
     1. 备份
 
