@@ -19,4 +19,4 @@ git config --global user.email "email@example.com"
     ssh -T git@github.com
     ```
 
-    如果输出“Hi user_name! You've successfully authenticated, but GitHub does not provide shell access.“就行了
+    如果输出“Hi user_name! You've successfully authenticated, but GitHub does not provide shell access.”就行了

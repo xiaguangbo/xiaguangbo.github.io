@@ -5,9 +5,9 @@
     2. 启动容器：sudo docker start ubuntu_container
     3. 进入容器：sudo docker exec -it ubuntu_container bash
 
-2. 软件
-    1. 更新软件源信息
-    2. 安装软件：apt install vim sudo
+2. 包
+    1. 更新包源信息
+    2. 安装包：apt install vim sudo
     3. 换源
 
 3. 用户
@@ -15,8 +15,8 @@
     2. 添加用户
     3. 让用户可以获得 root 权限
     4. 切换到普通用户
-    5. 更新软件源信息
-    6. 更新所有软件
+    5. 更新包源信息
+    6. 更新所有包
 
 ## 用户
 
