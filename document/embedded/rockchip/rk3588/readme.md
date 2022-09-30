@@ -17,7 +17,7 @@ sudo apt install p7zip-full bc time rsync
 ### 准备文件
 
 1. 将文件复制进来
-2. 解压、更新
+2. 解压、打补丁
 
     ```
     cd ~/sdk_linux
@@ -54,12 +54,6 @@ sudo apt install p7zip-full bc time rsync
 
     编译后的镜像在 /home/xiaguangbo/sdk_linux/rk3588/rockdev/pack 里
 
-3. 将编译好的文件复制到 windows
-
-    ```
-    docker cp ubuntu_container:/home/xiaguangbo/sdk_linux/rk3588/rockdev/pack C:\Users\16175\Downloads
-    ```
-
 ## npu
 
 ### 准备包
@@ -84,24 +78,32 @@ sudo apt install p7zip-full
     7z x rknpu2-master.zip -orknpu2-master
     ```
 
-### 准备包
+### 准备 python 环境
 
-```
-cd ~/npu/rknn-toolkit2-master
-python3 -m pip install --upgrade pip
-pip3 install numpy scikit-build
-pip3 install -r doc/requirements_cp36-1.4.0.txt
-pip3 install packages/rknn_toolkit2-1.4.0_22dcfef4-cp36-cp36m-linux_x86_64.whl
-```
+1. 安装
 
-测试安装是否成功，没报错就说明安装好了，ctrl + d 退出 python
-```
-python3
-from rknn.api import RKNN
-```
+    ```
+    cd ~/npu/rknn-toolkit2-master
+    python3 -m pip install --upgrade pip
+    pip3 install numpy scikit-build
+    pip3 install -r doc/requirements_cp36-1.4.0.txt
+    pip3 install packages/rknn_toolkit2-1.4.0_22dcfef4-cp36-cp36m-linux_x86_64.whl
+    ```
 
-测试模型
-```
-cd examples/onnx/yolov5
-python3 test.py
-```
+2. 测试安装是否成功
+
+    ```
+    python3
+    from rknn.api import RKNN
+    ```
+
+    没报错就说明安装好了，ctrl + d 退出 python
+
+3. 测试模型
+
+    ```
+    cd examples/onnx/yolov5
+    python3 test.py
+    ```
+
+    在 test.py 里的最后添加 cv2.imwrite("result.jpg", img_1)

@@ -1,8 +1,6 @@
 ## 安装
 
-- linux
-
-    dnf：sudo dnf install docker
+- linux：包名为 docker
 
     启动 docker 服务：sudo systemctl start docker
 
