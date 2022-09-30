@@ -91,5 +91,17 @@ cd ~/npu/rknn-toolkit2-master
 python3 -m pip install --upgrade pip
 pip3 install numpy scikit-build
 pip3 install -r doc/requirements_cp36-1.4.0.txt
-pip3 install package/rknn_toolkit2-1.4.0_22dcfef4-cp36-cp36m-linux_x86_64.whl
+pip3 install packages/rknn_toolkit2-1.4.0_22dcfef4-cp36-cp36m-linux_x86_64.whl
+```
+
+测试安装是否成功，没报错就说明安装好了，ctrl + d 退出 python
+```
+python3
+from rknn.api import RKNN
+```
+
+测试模型
+```
+cd examples/onnx/yolov5
+python3 test.py
 ```
