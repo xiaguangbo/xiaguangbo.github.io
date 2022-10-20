@@ -21,8 +21,8 @@ sudo apt install p7zip-full bc time rsync
 
     ```
     cd ~/sdk_linux
-    sudo 7z x rk3588_repo_sdk_v0.1.0a.7z
-    cd rk3588
+    sudo 7z x rk3588_repo_sdk_v1.0.2a.7z
+    cd rk3588_repo_sdk_v1.0.2a
     sudo .repo/repo/repo sync -l
     sudo .repo/repo/repo start rk3588/firefly --all
     sudo cp ../bundle/* ./
