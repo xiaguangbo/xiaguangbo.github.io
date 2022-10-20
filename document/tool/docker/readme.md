@@ -4,6 +4,11 @@
 
     启动 docker 服务：sudo systemctl start docker
 
+- windows
+
+    软件名为 docker desktop  
+    如果出现 WslRegisterDistribution failed with error: 0x800701bc 这种错误说明需要更新 wsl 的 linux 内核，方法是在 windows 的终端里执行 wsl --update
+
 ## 命令
 
 - 创建容器：sudo docker create -it --privileged --name container_name image_name:image_version  
