@@ -7,7 +7,7 @@
 - windows
 
     软件名为 docker desktop  
-    如果出现 WslRegisterDistribution failed with error: 0x800701bc 这种错误说明需要更新 wsl 的 linux 内核，方法是在 windows 的终端里执行 wsl --update
+    需要先安装 wsl，执行 wsl --install。如果还是有问题就更新 wsl 的 linux 内核，执行 wsl --update
 
 ## 命令
 
