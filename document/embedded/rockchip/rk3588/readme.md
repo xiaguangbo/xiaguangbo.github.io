@@ -11,7 +11,7 @@ sudo apt install repo git ssh make gcc libssl-dev liblz4-tool expect g++ patchel
 
 需要补充的包：
 ```
-sudo apt install p7zip-full bc time rsync
+sudo apt install p7zip-full bc time rsync xxd
 ```
 
 ### 准备文件
@@ -37,14 +37,18 @@ sudo apt install p7zip-full bc time rsync
     sudo mkdir rockdev
     ```
 
+    rockdev 文件夹需要自己创建
+
 ### 编译
 
 1. 配置
 
     ```
-    cd ~/sdk_linux/rk3588
+    cd ~/sdk_linux/rk3588_repo_sdk_v1.0.2a
     sudo ./build.sh itx-3588j-buildroot.mk
     ```
+
+    会列出一些 mk 文件，要选一下
 
 2. 编译
 
@@ -52,7 +56,7 @@ sudo apt install p7zip-full bc time rsync
     sudo ./build.sh
     ```
 
-    编译后的镜像在 /home/xiaguangbo/sdk_linux/rk3588/rockdev/pack 里
+    编译后的镜像在 sdk_linux/rk3588/rockdev/pack 里
 
 ## npu
 
