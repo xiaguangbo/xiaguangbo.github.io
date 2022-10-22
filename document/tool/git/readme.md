@@ -24,3 +24,16 @@ git config --global user.email "email@example.com"
         ```
 
         如果输出“Hi user_name! You've successfully authenticated, but GitHub does not provide shell access.”就行了
+
+## 放弃本地修改，强制与远程仓库同步
+
+git fetch --all
+git reset --hard origin/master
+
+master 是分支
+
+## error: invalid path ...
+
+在 windows 上 clone linux 的代码时出现
+
+git config core.protectNTFS false

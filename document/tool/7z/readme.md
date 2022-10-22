@@ -6,6 +6,10 @@
 
 ## 使用
 
-- 解压到当前位置：7z x compressed_package.zip
-- 解压到指定位置：7z x compressed_package.zip -ocompressed_package  
+支持多种压缩包格式
+
+- 解压到当前位置：7z x compress_package.7z
+- 解压到指定位置：7z x compress_package.7z -o./compress_package  
     -o 后面没有空格
+
+- 压缩：7z a -r compress_package.7z ./directory
