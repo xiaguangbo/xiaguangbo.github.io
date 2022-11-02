@@ -1,0 +1,3 @@
+## 问题
+
+- 下载慢：将下载地址改成 https://vscode.cdn.azure.cn/stable...

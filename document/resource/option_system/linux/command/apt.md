@@ -4,9 +4,9 @@
 - 安装包：sudo apt install package_name
 - 更换包源
 
-    1. 备份：sudo mv /etc/apt/sources.list /etc/apt/sources.list.backup
-    2. 安装包：sudo apt install ca-certificates
-    3. 添加 /etc/apt/sources.list 并将内容换成下面的：
+    1. 安装：sudo apt install ca-certificates
+    2. 备份：sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+    3. 将 /etc/apt/sources.list 内容替换如下：
 
         ```
         deb https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
