@@ -2,12 +2,12 @@
   - [universal_bootloader](document/project/universal_bootloader.md)
   - [universal_computer_language](document/project/universal_computer_language.md)
   - [universal_electrical_signal_detection_device](document/project/universal_electrical_signal_detection_device.md)
-  - [universal_thinking](document/project/universal_thinking.md)
   - [universal_transport_protocol](document/project/universal_transport_protocol.md)
 - resource
   - embedded
     - rockchip
       - rk3588
+        - [rk3588的uboot移植](document/resource/embedded/rockchip/rk3588/rk3588的uboot移植.md)
         - [sdk_linux的编译分析](document/resource/embedded/rockchip/rk3588/sdk_linux的编译分析.md)
         - [工作环境](document/resource/embedded/rockchip/rk3588/工作环境.md)
     - xilinx
@@ -17,6 +17,7 @@
     - linux
       - command
         - [apt](document/resource/option_system/linux/command/apt.md)
+        - [cd](document/resource/option_system/linux/command/cd.md)
         - [dirname](document/resource/option_system/linux/command/dirname.md)
         - [dnf](document/resource/option_system/linux/command/dnf.md)
         - [find](document/resource/option_system/linux/command/find.md)
@@ -28,6 +29,8 @@
         - [which](document/resource/option_system/linux/command/which.md)
       - distro
         - [ubuntu](document/resource/option_system/linux/distro/ubuntu.md)
+      - embedded
+        - [fit_image](document/resource/option_system/linux/embedded/fit_image.md)
     - windows
       - [windows](document/resource/option_system/windows/windows.md)
   - tool
@@ -47,5 +50,3 @@
     - [vscode](document/resource/tool/vscode.md)
     - [wtga](document/resource/tool/wtga.md)
     - [yarn](document/resource/tool/yarn.md)
-- work
-  - [README](document/work/readme.md)
