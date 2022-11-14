@@ -18,10 +18,12 @@
       - command
         - [apt](document/resource/option_system/linux/command/apt.md)
         - [cd](document/resource/option_system/linux/command/cd.md)
+        - [cp](document/resource/option_system/linux/command/cp.md)
         - [dirname](document/resource/option_system/linux/command/dirname.md)
         - [dnf](document/resource/option_system/linux/command/dnf.md)
         - [find](document/resource/option_system/linux/command/find.md)
         - [grep](document/resource/option_system/linux/command/grep.md)
+        - [mv](document/resource/option_system/linux/command/mv.md)
         - [nproc](document/resource/option_system/linux/command/nproc.md)
         - [realpath](document/resource/option_system/linux/command/realpath.md)
         - [sort](document/resource/option_system/linux/command/sort.md)
