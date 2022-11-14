@@ -34,7 +34,7 @@ OPTIONS 里的参数默认是 "allff"
 
 ```
 1207 build_all
-    输出一堆 TARGET_ARCH 变量，变量来自 unset_board_config_all 执行的 device/rockchip/.BoardConfig.mk 里的 RK_ 变量
+    输出一堆 TARGET_ARCH 变量，变量来自 unset_board_config_all 执行的 device/rockchip/.BoardConfig.mk 里的 RK_... 变量
     echo "TARGET_ARCH=$RK_ARCH"
     ...
 ```
