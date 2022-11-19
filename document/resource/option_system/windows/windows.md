@@ -1,3 +1,7 @@
+## vc 运行库
+
+https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
 ## vhdx 系统
 
 制作的 vhdx 使用动态 vhdx，静态 vhdx 会直接占用设定大小，而动态 vhdx 只会启动后才会占用设定大小
