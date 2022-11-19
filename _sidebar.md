@@ -5,16 +5,20 @@
   - [universal_transport_protocol](document/project/universal_transport_protocol.md)
 - resource
   - embedded
-    - rockchip
-      - rk3588
-        - [sdk信息](document/resource/embedded/rockchip/rk3588/sdk信息.md)
-        - [uboot移植](document/resource/embedded/rockchip/rk3588/uboot移植.md)
-        - [启动流程](document/resource/embedded/rockchip/rk3588/启动流程.md)
-        - [开发环境](document/resource/embedded/rockchip/rk3588/开发环境.md)
-        - [编译分析](document/resource/embedded/rockchip/rk3588/编译分析.md)
-    - xilinx
-      - xc7k325t
-        - [开发环境](document/resource/embedded/xilinx/xc7k325t/开发环境.md)
+    - chip
+      - rockchip
+        - rk3588
+          - [sdk信息](document/resource/embedded/chip/rockchip/rk3588/sdk信息.md)
+          - [uboot移植](document/resource/embedded/chip/rockchip/rk3588/uboot移植.md)
+          - [启动流程](document/resource/embedded/chip/rockchip/rk3588/启动流程.md)
+          - [开发环境](document/resource/embedded/chip/rockchip/rk3588/开发环境.md)
+          - [编译分析](document/resource/embedded/chip/rockchip/rk3588/编译分析.md)
+      - xilinx
+        - xc7k325t
+          - [开发环境](document/resource/embedded/chip/xilinx/xc7k325t/开发环境.md)
+    - system
+      - linux
+        - [fit_image](document/resource/embedded/system/linux/fit_image.md)
   - option_system
     - linux
       - command
@@ -33,8 +37,6 @@
         - [which](document/resource/option_system/linux/command/which.md)
       - distro
         - [ubuntu](document/resource/option_system/linux/distro/ubuntu.md)
-      - embedded
-        - [fit_image](document/resource/option_system/linux/embedded/fit_image.md)
     - windows
       - [windows](document/resource/option_system/windows/windows.md)
   - tool
