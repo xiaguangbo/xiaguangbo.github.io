@@ -7,12 +7,14 @@
   - embedded
     - rockchip
       - rk3588
-        - [rk3588的uboot移植](document/resource/embedded/rockchip/rk3588/rk3588的uboot移植.md)
-        - [sdk_linux的编译分析](document/resource/embedded/rockchip/rk3588/sdk_linux的编译分析.md)
-        - [工作环境](document/resource/embedded/rockchip/rk3588/工作环境.md)
+        - [sdk信息](document/resource/embedded/rockchip/rk3588/sdk信息.md)
+        - [uboot移植](document/resource/embedded/rockchip/rk3588/uboot移植.md)
+        - [启动流程](document/resource/embedded/rockchip/rk3588/启动流程.md)
+        - [开发环境](document/resource/embedded/rockchip/rk3588/开发环境.md)
+        - [编译分析](document/resource/embedded/rockchip/rk3588/编译分析.md)
     - xilinx
       - xc7k325t
-        - [工作环境](document/resource/embedded/xilinx/xc7k325t/工作环境.md)
+        - [开发环境](document/resource/embedded/xilinx/xc7k325t/开发环境.md)
   - option_system
     - linux
       - command
@@ -36,9 +38,10 @@
     - windows
       - [windows](document/resource/option_system/windows/windows.md)
   - tool
-    - [7z](document/resource/tool/7z.md)
+    - [7zip](document/resource/tool/7zip.md)
     - [bash](document/resource/tool/bash.md)
     - [bootice](document/resource/tool/bootice.md)
+    - [compiler_explorer](document/resource/tool/compiler_explorer.md)
     - [docker](document/resource/tool/docker.md)
     - [docsify](document/resource/tool/docsify.md)
     - [git](document/resource/tool/git.md)
