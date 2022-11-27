@@ -10,6 +10,6 @@
 ## 例子
 
 ```
-grep abc *.txt：在当前目录里的 txt 文件里找到 "abc" 字符串
-grep -r update /etc/acpi：查找 /etc/acpi 及其子目录下所有文件中的 "update" 字符串
+grep abc "*.txt"：在当前目录里的 txt 文件里找到 "abc" 字符串
+grep -r "update" ./：查找当前目录及其子目录下所有文件中的 "update" 字符串
 ```

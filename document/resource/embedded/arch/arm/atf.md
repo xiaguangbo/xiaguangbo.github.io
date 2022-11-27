@@ -1,23 +1,26 @@
 ```
-bl1  (bootrom。完成中断向量表设定以及其他 CPU 相关设定)
-bl21 (tpl：初始化 ddr，检查启动条件返回一个值将决定 bootrom 加载 spl(值0) 还是 usbplug(值1)) (rkbin/bin/rk35/rk3588_ddr_lp4_2112MHz_lp5_2736MHz_v1.08.bin,使用 rkbin/tools/ddrbin_tool 生成)
-bl22 (spl：加载 bl31、bl32、bl33 到对应权限的 RAM 中)
-bl31 (安全侧与非安全侧的切换。atf。管理 smc 指令的处理和中断的主力，运行在 secure monitor(EL3) 状态)
-bl32 (安全侧程序。tee os)
-bl33 (非安全侧程序。uboot > kernel)
+bl1：bootrom。完成中断向量表设定以及其他 CPU 相关设定、提供 usb 下载固件等，是厂商写在 cpu 自带的 flash 里的
+
+bl21：tpl，初始化 ddr
+bl22：spl，加载 bl31、bl32、bl33 到对应权限的 RAM 中
+
+bl31：安全侧与非安全侧的切换。atf。管理 smc 指令的处理和中断的主力，运行在 secure monitor（EL3） 状态
+bl32：安全侧程序。tee os：optee
+bl33：非安全侧程序。uboot > kernel
 ```
 
 ```
-bl1 到 bl32 部分 atf 都会提供，或者由厂商提供
+bl1 到 bl31 由 atf 提供，bl32 由 optee 提供，厂商也会提供这些
 
 安全侧与非安全侧的区别就是当非安全侧想获取安全侧的功能时必须过验证，验证不通过就无法获取，并没有限制安全侧程序不能是其他程序。这可以保护重要数据，比如指纹、支付密码。
 
 EL0：一般的应用程序。
 EL1：操作系统，比如 Linux。
-EL2：虚拟化(Hypervisor)，虚拟机管理器。
-EL3：最底层的安全固件(安全监视器)，比如 ARM Trusted Firmware(ARM 安全固件，ATF，也就是 TF-A)。
+EL2：虚拟化（Hypervisor），虚拟机管理器。
+EL3：最底层的安全固件（安全监视器），比如 ARM Trusted Firmware（ARM 安全固件，ATF，也就是 TF-A）。
 数字越大，级别越高
 ```
+
 ```
 1. bl1跳转到bl2执行
 
