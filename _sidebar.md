@@ -5,12 +5,15 @@
   - [universal_transport_protocol](document/project/universal_transport_protocol.md)
 - resource
   - embedded
+    - arch
+      - arm
+        - [atf](document/resource/embedded/arch/arm/atf.md)
     - chip
       - rockchip
         - rk3588
-          - [sdk信息](document/resource/embedded/chip/rockchip/rk3588/sdk信息.md)
+          - [sdk目录信息](document/resource/embedded/chip/rockchip/rk3588/sdk目录信息.md)
           - [uboot移植](document/resource/embedded/chip/rockchip/rk3588/uboot移植.md)
-          - [启动流程](document/resource/embedded/chip/rockchip/rk3588/启动流程.md)
+          - [启动步骤](document/resource/embedded/chip/rockchip/rk3588/启动步骤.md)
           - [开发环境](document/resource/embedded/chip/rockchip/rk3588/开发环境.md)
           - [编译分析](document/resource/embedded/chip/rockchip/rk3588/编译分析.md)
       - xilinx
@@ -32,16 +35,19 @@
         - [mv](document/resource/option_system/linux/command/mv.md)
         - [nproc](document/resource/option_system/linux/command/nproc.md)
         - [realpath](document/resource/option_system/linux/command/realpath.md)
+        - [rm](document/resource/option_system/linux/command/rm.md)
         - [sort](document/resource/option_system/linux/command/sort.md)
         - [uniq](document/resource/option_system/linux/command/uniq.md)
         - [which](document/resource/option_system/linux/command/which.md)
       - distro
         - [ubuntu](document/resource/option_system/linux/distro/ubuntu.md)
+      - shell
+        - [bash](document/resource/option_system/linux/shell/bash.md)
     - windows
       - [windows](document/resource/option_system/windows/windows.md)
   - tool
     - [7zip](document/resource/tool/7zip.md)
-    - [bash](document/resource/tool/bash.md)
+    - [balena_etcher](document/resource/tool/balena_etcher.md)
     - [bootice](document/resource/tool/bootice.md)
     - [compiler_explorer](document/resource/tool/compiler_explorer.md)
     - [docker](document/resource/tool/docker.md)
