@@ -7,7 +7,7 @@
   - embedded
     - arch
       - arm
-        - [atf](document/resource/embedded/arch/arm/atf.md)
+        - [bootloader](document/resource/embedded/arch/arm/bootloader.md)
     - chip
       - rockchip
         - rk3588
@@ -16,6 +16,7 @@
           - [启动步骤](document/resource/embedded/chip/rockchip/rk3588/启动步骤.md)
           - [开发环境](document/resource/embedded/chip/rockchip/rk3588/开发环境.md)
           - [编译分析](document/resource/embedded/chip/rockchip/rk3588/编译分析.md)
+          - [编译日志uboot](document/resource/embedded/chip/rockchip/rk3588/编译日志uboot.md)
       - xilinx
         - xc7k325t
           - [开发环境](document/resource/embedded/chip/xilinx/xc7k325t/开发环境.md)
@@ -27,6 +28,7 @@
       - command
         - [apt](document/resource/option_system/linux/command/apt.md)
         - [cd](document/resource/option_system/linux/command/cd.md)
+        - [clear](document/resource/option_system/linux/command/clear.md)
         - [cp](document/resource/option_system/linux/command/cp.md)
         - [dirname](document/resource/option_system/linux/command/dirname.md)
         - [dnf](document/resource/option_system/linux/command/dnf.md)
@@ -34,8 +36,10 @@
         - [grep](document/resource/option_system/linux/command/grep.md)
         - [mv](document/resource/option_system/linux/command/mv.md)
         - [nproc](document/resource/option_system/linux/command/nproc.md)
+        - [pwd](document/resource/option_system/linux/command/pwd.md)
         - [realpath](document/resource/option_system/linux/command/realpath.md)
         - [rm](document/resource/option_system/linux/command/rm.md)
+        - [sed](document/resource/option_system/linux/command/sed.md)
         - [sort](document/resource/option_system/linux/command/sort.md)
         - [uniq](document/resource/option_system/linux/command/uniq.md)
         - [which](document/resource/option_system/linux/command/which.md)

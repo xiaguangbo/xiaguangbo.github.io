@@ -8,4 +8,13 @@ https://blogzone.me/link/Y3fRyZjB4lGTninA?clash=1
 
 ## 软件
 
-clash
+### clash
+
+- 让网址走代理
+
+    profiles，右键，编辑
+
+    ```
+    rules:
+    - 'DOMAIN-SUFFIX,translate.googleapis.com,魔戒.net'
+    ```

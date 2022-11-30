@@ -1,18 +1,26 @@
 ```
-bl1：bootrom。完成中断向量表设定以及其他 CPU 相关设定、提供 usb 下载固件等，是厂商写在 cpu 自带的 flash 里的
+bl1：bootrom，EL3。完成中断向量表设定以及其他 CPU 相关设定、提供 usb 下载固件等，是厂商写在 cpu 自带的 flash 里的
 
-bl21：tpl，初始化 ddr
-bl22：spl，加载 bl31、bl32、bl33 到对应权限的 RAM 中
+bl21：tpl，EL3，初始化 ddr
+bl22：spl，EL3，加载 bl31、bl32、bl33 到对应权限的 RAM 中
+tpl 应该也属于 spl，可能初始化 ddr 涉及芯片关键寄存器，为安全考虑就单独拿出来了
 
 bl31：安全侧与非安全侧的切换。atf。管理 smc 指令的处理和中断的主力，运行在 secure monitor（EL3） 状态
-bl32：安全侧程序。tee os：optee
-bl33：非安全侧程序。uboot > kernel
+bl32：安全侧程序。tee os：optee，EL2
+bl33：非安全侧程序。uboot，EL2
+
+kernel，EL1
+APP，EL0
+
+atf 会提供 bl1 到 bl31，但实际上只用 bl31，bl21 会由 uboot-spl 提供，其他部分做参考。bl32 由 optee 提供，厂商也会提供这些
+
+现在很多处理器都内置一个 bootrom，执行部分初始化，并可从各种外设和存储器中加载程序并执行，bootrom 中固化的程序被称为一级程序加载器，被它加载的程序就称为二级程序加载器（secondary program loader，即 SPL）。
+其实 u-boot 本身就可以作为二级程序加载器，但不幸的是一般BOOT ROM之后，主存储器都是没有初始化的，例如 BBB 只有 109KB 的内置 RAM 可用，这就限制了程序的大小，于是精简的 u-boot，u-boot-spl 就此问世。
+spl 代码和 uboot 的代码是在一起的，在 uboot 基础上定义一些和 spl 有关的宏来控制一些由变化的代码，编译的时候会将这些文件单独放在 u-boot 的根目录下的 tpl、spl 目录里。
 ```
 
 ```
-bl1 到 bl31 由 atf 提供，bl32 由 optee 提供，厂商也会提供这些
-
-安全侧与非安全侧的区别就是当非安全侧想获取安全侧的功能时必须过验证，验证不通过就无法获取，并没有限制安全侧程序不能是其他程序。这可以保护重要数据，比如指纹、支付密码。
+安全侧与非安全侧的区别就是当非安全侧想获取安全侧的功能时必须过验证（CSF 头中的签名），验证不通过就无法获取，并没有限制安全侧程序不能是其他程序。这可以保护重要数据，比如指纹、支付密码。
 
 EL0：一般的应用程序。
 EL1：操作系统，比如 Linux。
