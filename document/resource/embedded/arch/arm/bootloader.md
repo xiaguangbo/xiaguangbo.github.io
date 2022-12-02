@@ -1,16 +1,15 @@
 ```
 bl1：bootrom，EL3。完成中断向量表设定以及其他 CPU 相关设定、提供 usb 下载固件等，是厂商写在 cpu 自带的 flash 里的
 
-bl21：tpl，EL3，初始化 ddr
+bl21：tpl，EL3，初始化 ddr。tpl 应该也属于 spl，可能初始化 ddr 涉及芯片关键寄存器，为安全考虑就单独拿出来了作为 tpl 了
 bl22：spl，EL3，加载 bl31、bl32、bl33 到对应权限的 RAM 中
-tpl 应该也属于 spl，可能初始化 ddr 涉及芯片关键寄存器，为安全考虑就单独拿出来了
 
 bl31：安全侧与非安全侧的切换。atf。管理 smc 指令的处理和中断的主力，运行在 secure monitor（EL3） 状态
 bl32：安全侧程序。tee os：optee，EL2
 bl33：非安全侧程序。uboot，EL2
 
-kernel，EL1
 APP，EL0
+kernel，EL1
 
 atf 会提供 bl1 到 bl31，但实际上只用 bl31，bl21 会由 uboot-spl 提供，其他部分做参考。bl32 由 optee 提供，厂商也会提供这些
 

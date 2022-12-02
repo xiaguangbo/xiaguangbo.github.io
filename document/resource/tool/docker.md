@@ -31,3 +31,5 @@
 - 复制：docker cp  
     从主机到 docker：docker cp path container_name:path  
     从 docker 到主机：docker cp container_name:path path
+
+    路径不能带 /*
