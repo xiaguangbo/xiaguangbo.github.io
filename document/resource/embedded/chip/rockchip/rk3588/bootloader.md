@@ -7,7 +7,7 @@ bl21、bl22 加 rkbin/bin/rk35/rk3588_usbplug_v1.09.bin 合并后的固件：rk3
 
 bl31：rkbin/bin/rk35/rk3588_bl31_v1.30.elf
 bl32：rkbin/bin/rk35/rk3588_bl32_v1.12.bin
-bl31、bl32 合并后的固件：trust.img（RK3588TRUST.ini）
+bl31、bl32 合并后的固件：trust.img（RK3588TRUST.ini），但这里并没这么做，而是和 uboot.img 放在一起了
 
 bl33：非安全侧程序。uboot > kernel
 

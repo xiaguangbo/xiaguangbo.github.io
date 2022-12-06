@@ -8,21 +8,25 @@
     - arch
       - arm
         - [bootloader](document/resource/embedded/arch/arm/bootloader.md)
+        - [fit](document/resource/embedded/arch/arm/fit.md)
     - chip
       - rockchip
         - rk3588
+          - [bootloader](document/resource/embedded/chip/rockchip/rk3588/bootloader.md)
           - [sdk目录信息](document/resource/embedded/chip/rockchip/rk3588/sdk目录信息.md)
           - [uboot移植](document/resource/embedded/chip/rockchip/rk3588/uboot移植.md)
-          - [启动步骤](document/resource/embedded/chip/rockchip/rk3588/启动步骤.md)
+          - [启动日志](document/resource/embedded/chip/rockchip/rk3588/启动日志.md)
           - [开发环境](document/resource/embedded/chip/rockchip/rk3588/开发环境.md)
           - [编译分析](document/resource/embedded/chip/rockchip/rk3588/编译分析.md)
-          - [编译日志uboot](document/resource/embedded/chip/rockchip/rk3588/编译日志uboot.md)
+          - 编译日志
+            - [uboot](document/resource/embedded/chip/rockchip/rk3588/编译日志/1_uboot.md)
+            - [extboot](document/resource/embedded/chip/rockchip/rk3588/编译日志/2_extboot.md)
+            - [recovery](document/resource/embedded/chip/rockchip/rk3588/编译日志/3_recovery.md)
+            - [mkfirmware](document/resource/embedded/chip/rockchip/rk3588/编译日志/4_mkfirmware.md)
+            - [updateimg](document/resource/embedded/chip/rockchip/rk3588/编译日志/5_updateimg.md)
       - xilinx
         - xc7k325t
           - [开发环境](document/resource/embedded/chip/xilinx/xc7k325t/开发环境.md)
-    - system
-      - linux
-        - [fit_image](document/resource/embedded/system/linux/fit_image.md)
   - option_system
     - linux
       - command
@@ -30,18 +34,25 @@
         - [cd](document/resource/option_system/linux/command/cd.md)
         - [clear](document/resource/option_system/linux/command/clear.md)
         - [cp](document/resource/option_system/linux/command/cp.md)
+        - [date](document/resource/option_system/linux/command/date.md)
         - [dirname](document/resource/option_system/linux/command/dirname.md)
         - [dnf](document/resource/option_system/linux/command/dnf.md)
         - [find](document/resource/option_system/linux/command/find.md)
+        - [free](document/resource/option_system/linux/command/free.md)
         - [grep](document/resource/option_system/linux/command/grep.md)
+        - [id](document/resource/option_system/linux/command/id.md)
         - [mv](document/resource/option_system/linux/command/mv.md)
         - [nproc](document/resource/option_system/linux/command/nproc.md)
+        - [ps](document/resource/option_system/linux/command/ps.md)
         - [pwd](document/resource/option_system/linux/command/pwd.md)
         - [realpath](document/resource/option_system/linux/command/realpath.md)
         - [rm](document/resource/option_system/linux/command/rm.md)
         - [sed](document/resource/option_system/linux/command/sed.md)
         - [sort](document/resource/option_system/linux/command/sort.md)
+        - [top](document/resource/option_system/linux/command/top.md)
+        - [uname](document/resource/option_system/linux/command/uname.md)
         - [uniq](document/resource/option_system/linux/command/uniq.md)
+        - [w](document/resource/option_system/linux/command/w.md)
         - [which](document/resource/option_system/linux/command/which.md)
       - distro
         - [ubuntu](document/resource/option_system/linux/distro/ubuntu.md)
