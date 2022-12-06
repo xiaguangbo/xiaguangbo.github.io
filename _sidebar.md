@@ -63,6 +63,7 @@
   - tool
     - [7zip](document/resource/tool/7zip.md)
     - [balena_etcher](document/resource/tool/balena_etcher.md)
+    - [beyond_compare](document/resource/tool/beyond_compare.md)
     - [bootice](document/resource/tool/bootice.md)
     - [compiler_explorer](document/resource/tool/compiler_explorer.md)
     - [docker](document/resource/tool/docker.md)
