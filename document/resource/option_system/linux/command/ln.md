@@ -4,19 +4,17 @@
 ln [参数][源文件][链接文件]
 
 参数
-    --backup[=CONTROL] 备份已存在的目标文件
-    -b 类似 --backup ，但不接受参数
-    -d 允许超级用户制作目录的硬链接
     -f 强制执行
-    -i 交互模式，文件存在则提示用户是否覆盖
-    -n 把符号链接视为一般目录
-    -s 软链接(符号链接)
+    -r 创建相对于链接位置的软链接
+    -s 创建软链接
     不添加参数就是硬链接
-    -v 显示详细的处理过程
 
 例子
-    ln -s abc.txt abc_soft_link // abc_soft_link 是软链接
-    ln abc.txt abc_hard_link // abc_hard_link 是硬链接
+    ln -s ./abc/abc.txt ./abc_soft_link // ./abc_soft_link 是软链接
+    ln -s ./abc/abc.txt ./ // ./abc.txt 是软链接，名字和源文件一样
+
+    ln ./abc/abc.txt ./abc_hard_link // ./abc_hard_link 是硬链接
+    ln ./abc/abc.txt ./ // ./abc.txt 是硬链接，名字和源文件一样
 ```
 
 ```
@@ -42,5 +40,11 @@ ln [参数][源文件][链接文件]
 ```
 判断是软链接还是硬链接
     使用 ls -l 查看，软链接带有指向的路径，如 277876 lrwxrwxrwx 1 root root       41 Dec  2 22:31 abc_soft_link -> abc.txt
-    硬链接没有，但是硬链接会增加第三个项目的数字，数字是几就代表有几个硬链接，默认是 1 
+    硬链接没有，但是硬链接会增加第三个项目的数字，数字是几就代表有几个硬链接，默认是 1，如果创建了一个硬链接就是 2
+
+-rs
+    -r 需要和 -s 一起用
+    -r 创建链接时会根据软链接相对于源文件的路径级数在指向的链接前加上相应个数的 ../
+    如       ln -s ./abc/def/hij.txt ./123/， 查看 ls -l ./123，结果是 hij.txt -> abc/def/hij.txt，这很明显不对
+    加上 -r，ln -rs ./abc/def/hij.txt ./123/，查看 ls -l ./123，结果是 hij.txt -> ../abc/def/hij.txt，这就对了
 ```

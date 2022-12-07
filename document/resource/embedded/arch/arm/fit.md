@@ -8,7 +8,7 @@ its：image tree source（镜像树源文件），类似于设备树的描述文
 itb：image tree binary（镜像树二进制？扁平镜像二进制），fit 格式的镜像文件，类似于 .img。包含 its、多个 dtb（设备树二进制）、多个 uboot 或 kernel 镜像。用于 uboot 一份，用于 kernel 一份
 fdt：flattened device tree（扁平设备树？扁平镜像设备树），its 要记录的 dtb，在这里称为 fdt（flattened device tree）
 
-.its + uImage => mkimage + dtc => .itb
+.its + 镜像文件 => mkimage + dtc => .itb，会根据 .its 里写的路径去打包文件到 .itb 里。.its 里的路径是相对于 u-boot/ 或 kernel/ 的位置
 ```
 
 ## vmlinux、zImage、uImage 历史
