@@ -28,7 +28,11 @@
         - xc7k325t
           - [开发环境](document/resource/embedded/chip/xilinx/xc7k325t/开发环境.md)
   - option_system
+    - file_system
+      - [architecture](document/resource/option_system/file_system/architecture.md)
     - linux
+      - architecture
+        - [architecture](document/resource/option_system/linux/architecture/architecture.md)
       - command
         - [apt](document/resource/option_system/linux/command/apt.md)
         - [cd](document/resource/option_system/linux/command/cd.md)
@@ -41,6 +45,8 @@
         - [free](document/resource/option_system/linux/command/free.md)
         - [grep](document/resource/option_system/linux/command/grep.md)
         - [id](document/resource/option_system/linux/command/id.md)
+        - [ln](document/resource/option_system/linux/command/ln.md)
+        - [lsmod](document/resource/option_system/linux/command/lsmod.md)
         - [mv](document/resource/option_system/linux/command/mv.md)
         - [nproc](document/resource/option_system/linux/command/nproc.md)
         - [ps](document/resource/option_system/linux/command/ps.md)
@@ -52,6 +58,7 @@
         - [top](document/resource/option_system/linux/command/top.md)
         - [uname](document/resource/option_system/linux/command/uname.md)
         - [uniq](document/resource/option_system/linux/command/uniq.md)
+        - [uptime](document/resource/option_system/linux/command/uptime.md)
         - [w](document/resource/option_system/linux/command/w.md)
         - [which](document/resource/option_system/linux/command/which.md)
       - distro
