@@ -15,7 +15,8 @@
           - [bootloader](document/resource/embedded/chip/rockchip/rk3588/bootloader.md)
           - [sdk目录信息](document/resource/embedded/chip/rockchip/rk3588/sdk目录信息.md)
           - [uboot移植](document/resource/embedded/chip/rockchip/rk3588/uboot移植.md)
-          - [启动日志](document/resource/embedded/chip/rockchip/rk3588/启动日志.md)
+          - 启动日志
+            - [ubootitb_recoveryimg](document/resource/embedded/chip/rockchip/rk3588/启动日志/ubootitb_recoveryimg.md)
           - [开发环境](document/resource/embedded/chip/rockchip/rk3588/开发环境.md)
           - [编译分析](document/resource/embedded/chip/rockchip/rk3588/编译分析.md)
           - 编译日志
