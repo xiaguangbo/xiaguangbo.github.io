@@ -31,8 +31,6 @@
     - file_system
       - [architecture](document/resource/option_system/file_system/architecture.md)
     - linux
-      - architecture
-        - [architecture](document/resource/option_system/linux/architecture/architecture.md)
       - command
         - [apt](document/resource/option_system/linux/command/apt.md)
         - [cd](document/resource/option_system/linux/command/cd.md)
@@ -44,6 +42,7 @@
         - [find](document/resource/option_system/linux/command/find.md)
         - [free](document/resource/option_system/linux/command/free.md)
         - [grep](document/resource/option_system/linux/command/grep.md)
+        - [help](document/resource/option_system/linux/command/help.md)
         - [id](document/resource/option_system/linux/command/id.md)
         - [ln](document/resource/option_system/linux/command/ln.md)
         - [lsmod](document/resource/option_system/linux/command/lsmod.md)
@@ -61,6 +60,11 @@
         - [uptime](document/resource/option_system/linux/command/uptime.md)
         - [w](document/resource/option_system/linux/command/w.md)
         - [which](document/resource/option_system/linux/command/which.md)
+      - development
+        - [architecture](document/resource/option_system/linux/development/architecture.md)
+        - tool
+          - [dumpimage](document/resource/option_system/linux/development/tool/dumpimage.md)
+          - [mkimage](document/resource/option_system/linux/development/tool/mkimage.md)
       - distro
         - [ubuntu](document/resource/option_system/linux/distro/ubuntu.md)
       - shell

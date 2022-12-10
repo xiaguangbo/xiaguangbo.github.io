@@ -467,13 +467,8 @@ bootm 200000:kernel@2 - 200000:fdt@1
 
 ```
 FIT Image可以兼容于多种板子，而无需重新进行编译烧写。 对于有多个kernel节点或者fdt节点等等，兼容性更强。同时，可以有多种configurations，来对kernel、fdt、ramdisk来进行组合。
-```
 
-## 从 .itb 里提取
+mkimage在制作映象文件的时候，是在原来的可执行映象文件的前面加上一个0x40字节的头，记录参数所指定的信息，这样uboot才能识别这个映象是针对哪个CPU体系结构的，哪个OS的，哪种类型，加载内存中的哪个位置， 入口点在内存的那个位置以及映象名是什么
 
-```
-使用 u-boot/tools/dumpimage 工具可以对itb文件进行分离，示例如下:
-
-dumpimage -l your.itb // 列出itb文件中描述内核、根文件系统、设备树等的相关信息
-dumpimage -i your.itb -T flat_dt -p 0 uboot // 提取 “Image 0 (uboot)”，输出文件名为 uboot，文件名通常保持一致
+使用 u-boot/tools/dumpimage 工具可以对itb文件进行分离
 ```
