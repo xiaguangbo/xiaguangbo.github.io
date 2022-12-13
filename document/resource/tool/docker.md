@@ -33,3 +33,12 @@
     从 docker 到主机：docker cp container_name:path path
 
     路径不能带 /*
+
+## ssh
+
+docker 将容器的 A 端口和虚拟机的 B 端口映射起来，然后主机连接虚拟机的 ip 和端口 B
+
+```
+docker create -it --privileged -p 8022:22 --name container_name image_name:image_version
+ssh -p 8022 root@192.168.100.0
+```
