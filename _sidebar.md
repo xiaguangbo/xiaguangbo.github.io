@@ -1,10 +1,14 @@
-- project
-  - [universal_bootloader](document/project/universal_bootloader.md)
-  - [universal_computer_language](document/project/universal_computer_language.md)
-  - [universal_electrical_signal_detection_device](document/project/universal_electrical_signal_detection_device.md)
-  - [universal_programming_thinking](document/project/universal_programming_thinking.md)
-  - [universal_transmission_protocol](document/project/universal_transmission_protocol.md)
 - resource
+  - diy
+    - computer
+      - [amd_gpu_rx5000_series](document/resource/diy/computer/amd_gpu_rx5000_series.md)
+      - [x99](document/resource/diy/computer/x99.md)
+    - project
+      - [universal_bootloader](document/resource/diy/project/universal_bootloader.md)
+      - [universal_computer_language](document/resource/diy/project/universal_computer_language.md)
+      - [universal_electrical_signal_detection_device](document/resource/diy/project/universal_electrical_signal_detection_device.md)
+      - [universal_programming_thinking](document/resource/diy/project/universal_programming_thinking.md)
+      - [universal_transmission_protocol](document/resource/diy/project/universal_transmission_protocol.md)
   - embedded
     - arch
       - arm
