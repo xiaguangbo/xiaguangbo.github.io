@@ -25,3 +25,5 @@ set-executionpolicy remotesigned
 ## wintogo
 
 电脑里的 nvme 或 sata 硬盘安装好系统后拿出来使用移动硬盘盒驱动，并不能顺利启动系统，但能启动引导程序。猜测是引导由 BIOS 加载并启动，但是引导程序记录的系统的位置是在电脑内部，而不是移动硬盘
+
+但反过来好像可以
