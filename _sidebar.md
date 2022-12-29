@@ -1,7 +1,7 @@
 - development
   - software
     - framework
-      - [跨平台开发](document/development/software/framework/跨平台开发.md)
+      - [跨平台软件开发](document/development/software/framework/跨平台软件开发.md)
     - tool
       - [compiler_explorer](document/development/software/tool/compiler_explorer.md)
       - [docker](document/development/software/tool/docker.md)
