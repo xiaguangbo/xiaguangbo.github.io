@@ -1,7 +1,24 @@
+- development
+  - software
+    - framework
+      - [跨平台开发](document/development/software/framework/跨平台开发.md)
+    - tool
+      - [compiler_explorer](document/development/software/tool/compiler_explorer.md)
+      - [docker](document/development/software/tool/docker.md)
+      - [git](document/development/software/tool/git.md)
+      - [node](document/development/software/tool/node.md)
+      - [python](document/development/software/tool/python.md)
+      - [vim](document/development/software/tool/vim.md)
+      - [vscode](document/development/software/tool/vscode.md)
+      - [yarn](document/development/software/tool/yarn.md)
 - diy
   - computer
-    - [amd_gpu_rx5000_series](document/diy/computer/amd_gpu_rx5000_series.md)
-    - [x99](document/diy/computer/x99.md)
+    - hardware
+      - [x99](document/diy/computer/hardware/x99.md)
+    - tool
+      - [bootice](document/diy/computer/tool/bootice.md)
+      - [ventoy](document/diy/computer/tool/ventoy.md)
+      - [wtga](document/diy/computer/tool/wtga.md)
   - project
     - [universal_bootloader](document/diy/project/universal_bootloader.md)
     - [universal_computer_language](document/diy/project/universal_computer_language.md)
@@ -32,6 +49,8 @@
     - xilinx
       - xc7k325t
         - [开发环境](document/embedded/chip/xilinx/xc7k325t/开发环境.md)
+  - tool
+    - [balena_etcher](document/embedded/tool/balena_etcher.md)
 - option_system
   - file_system
     - [architecture](document/option_system/file_system/architecture.md)
@@ -78,20 +97,7 @@
     - [windows](document/option_system/windows/windows.md)
 - tool
   - [7zip](document/tool/7zip.md)
-  - [balena_etcher](document/tool/balena_etcher.md)
   - [beyond_compare](document/tool/beyond_compare.md)
-  - [bootice](document/tool/bootice.md)
-  - [compiler_explorer](document/tool/compiler_explorer.md)
-  - [docker](document/tool/docker.md)
   - [docsify](document/tool/docsify.md)
-  - [git](document/tool/git.md)
-  - [node](document/tool/node.md)
-  - [python](document/tool/python.md)
-  - [tauri](document/tool/tauri.md)
-  - [ventoy](document/tool/ventoy.md)
-  - [vim](document/tool/vim.md)
   - [vmware](document/tool/vmware.md)
   - [vpn](document/tool/vpn.md)
-  - [vscode](document/tool/vscode.md)
-  - [wtga](document/tool/wtga.md)
-  - [yarn](document/tool/yarn.md)
