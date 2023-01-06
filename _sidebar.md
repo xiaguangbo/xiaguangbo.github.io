@@ -1,4 +1,33 @@
 - development
+  - embedded
+    - arch
+      - arm
+        - [bootloader](document/development/embedded/arch/arm/bootloader.md)
+        - [fit](document/development/embedded/arch/arm/fit.md)
+    - chip
+      - rockchip
+        - rk3588
+          - [bootloader](document/development/embedded/chip/rockchip/rk3588/bootloader.md)
+          - [sdk目录信息](document/development/embedded/chip/rockchip/rk3588/sdk目录信息.md)
+          - [uboot移植](document/development/embedded/chip/rockchip/rk3588/uboot移植.md)
+          - 启动日志
+            - [ubootitb_recoveryimg](document/development/embedded/chip/rockchip/rk3588/启动日志/ubootitb_recoveryimg.md)
+          - [开发环境](document/development/embedded/chip/rockchip/rk3588/开发环境.md)
+          - [编译分析](document/development/embedded/chip/rockchip/rk3588/编译分析.md)
+          - 编译日志
+            - [uboot](document/development/embedded/chip/rockchip/rk3588/编译日志/1_uboot.md)
+            - [extboot](document/development/embedded/chip/rockchip/rk3588/编译日志/2_extboot.md)
+            - [recovery](document/development/embedded/chip/rockchip/rk3588/编译日志/3_recovery.md)
+            - [mkfirmware](document/development/embedded/chip/rockchip/rk3588/编译日志/4_mkfirmware.md)
+            - [updateimg](document/development/embedded/chip/rockchip/rk3588/编译日志/5_updateimg.md)
+      - xilinx
+        - xc7k325t
+          - [开发环境](document/development/embedded/chip/xilinx/xc7k325t/开发环境.md)
+    - tool
+      - [balena_etcher](document/development/embedded/tool/balena_etcher.md)
+  - plc
+    - siemens
+      - [环境](document/development/plc/siemens/环境.md)
   - software
     - framework
       - [uno_platform](document/development/software/framework/uno_platform.md)
@@ -26,79 +55,54 @@
     - [universal_electrical_signal_detection_device](document/diy/project/universal_electrical_signal_detection_device.md)
     - [universal_programming_thinking](document/diy/project/universal_programming_thinking.md)
     - [universal_transmission_protocol](document/diy/project/universal_transmission_protocol.md)
-- embedded
-  - arch
-    - arm
-      - [bootloader](document/embedded/arch/arm/bootloader.md)
-      - [fit](document/embedded/arch/arm/fit.md)
-  - chip
-    - rockchip
-      - rk3588
-        - [bootloader](document/embedded/chip/rockchip/rk3588/bootloader.md)
-        - [sdk目录信息](document/embedded/chip/rockchip/rk3588/sdk目录信息.md)
-        - [uboot移植](document/embedded/chip/rockchip/rk3588/uboot移植.md)
-        - 启动日志
-          - [ubootitb_recoveryimg](document/embedded/chip/rockchip/rk3588/启动日志/ubootitb_recoveryimg.md)
-        - [开发环境](document/embedded/chip/rockchip/rk3588/开发环境.md)
-        - [编译分析](document/embedded/chip/rockchip/rk3588/编译分析.md)
-        - 编译日志
-          - [uboot](document/embedded/chip/rockchip/rk3588/编译日志/1_uboot.md)
-          - [extboot](document/embedded/chip/rockchip/rk3588/编译日志/2_extboot.md)
-          - [recovery](document/embedded/chip/rockchip/rk3588/编译日志/3_recovery.md)
-          - [mkfirmware](document/embedded/chip/rockchip/rk3588/编译日志/4_mkfirmware.md)
-          - [updateimg](document/embedded/chip/rockchip/rk3588/编译日志/5_updateimg.md)
-    - xilinx
-      - xc7k325t
-        - [开发环境](document/embedded/chip/xilinx/xc7k325t/开发环境.md)
-  - tool
-    - [balena_etcher](document/embedded/tool/balena_etcher.md)
 - option_system
   - file_system
     - [architecture](document/option_system/file_system/architecture.md)
-  - linux
-    - command
-      - [apt](document/option_system/linux/command/apt.md)
-      - [cd](document/option_system/linux/command/cd.md)
-      - [clear](document/option_system/linux/command/clear.md)
-      - [cp](document/option_system/linux/command/cp.md)
-      - [date](document/option_system/linux/command/date.md)
-      - [dirname](document/option_system/linux/command/dirname.md)
-      - [dnf](document/option_system/linux/command/dnf.md)
-      - [find](document/option_system/linux/command/find.md)
-      - [free](document/option_system/linux/command/free.md)
-      - [grep](document/option_system/linux/command/grep.md)
-      - [help](document/option_system/linux/command/help.md)
-      - [id](document/option_system/linux/command/id.md)
-      - [ln](document/option_system/linux/command/ln.md)
-      - [lsmod](document/option_system/linux/command/lsmod.md)
-      - [mv](document/option_system/linux/command/mv.md)
-      - [nproc](document/option_system/linux/command/nproc.md)
-      - [ps](document/option_system/linux/command/ps.md)
-      - [pwd](document/option_system/linux/command/pwd.md)
-      - [realpath](document/option_system/linux/command/realpath.md)
-      - [rm](document/option_system/linux/command/rm.md)
-      - [sed](document/option_system/linux/command/sed.md)
-      - [sort](document/option_system/linux/command/sort.md)
-      - [top](document/option_system/linux/command/top.md)
-      - [uname](document/option_system/linux/command/uname.md)
-      - [uniq](document/option_system/linux/command/uniq.md)
-      - [uptime](document/option_system/linux/command/uptime.md)
-      - [w](document/option_system/linux/command/w.md)
-      - [which](document/option_system/linux/command/which.md)
-    - development
-      - [architecture](document/option_system/linux/development/architecture.md)
-      - tool
-        - [dumpimage](document/option_system/linux/development/tool/dumpimage.md)
-        - [mkimage](document/option_system/linux/development/tool/mkimage.md)
-    - distro
-      - [ubuntu](document/option_system/linux/distro/ubuntu.md)
-    - shell
-      - [bash](document/option_system/linux/shell/bash.md)
-  - windows
-    - [windows](document/option_system/windows/windows.md)
+  - kernel
+    - linux
+      - command
+        - [apt](document/option_system/kernel/linux/command/apt.md)
+        - [cd](document/option_system/kernel/linux/command/cd.md)
+        - [clear](document/option_system/kernel/linux/command/clear.md)
+        - [cp](document/option_system/kernel/linux/command/cp.md)
+        - [date](document/option_system/kernel/linux/command/date.md)
+        - [dirname](document/option_system/kernel/linux/command/dirname.md)
+        - [dnf](document/option_system/kernel/linux/command/dnf.md)
+        - [find](document/option_system/kernel/linux/command/find.md)
+        - [free](document/option_system/kernel/linux/command/free.md)
+        - [grep](document/option_system/kernel/linux/command/grep.md)
+        - [help](document/option_system/kernel/linux/command/help.md)
+        - [id](document/option_system/kernel/linux/command/id.md)
+        - [ln](document/option_system/kernel/linux/command/ln.md)
+        - [lsmod](document/option_system/kernel/linux/command/lsmod.md)
+        - [mv](document/option_system/kernel/linux/command/mv.md)
+        - [nproc](document/option_system/kernel/linux/command/nproc.md)
+        - [ps](document/option_system/kernel/linux/command/ps.md)
+        - [pwd](document/option_system/kernel/linux/command/pwd.md)
+        - [realpath](document/option_system/kernel/linux/command/realpath.md)
+        - [rm](document/option_system/kernel/linux/command/rm.md)
+        - [sed](document/option_system/kernel/linux/command/sed.md)
+        - [sort](document/option_system/kernel/linux/command/sort.md)
+        - [top](document/option_system/kernel/linux/command/top.md)
+        - [uname](document/option_system/kernel/linux/command/uname.md)
+        - [uniq](document/option_system/kernel/linux/command/uniq.md)
+        - [uptime](document/option_system/kernel/linux/command/uptime.md)
+        - [w](document/option_system/kernel/linux/command/w.md)
+        - [which](document/option_system/kernel/linux/command/which.md)
+      - development
+        - [architecture](document/option_system/kernel/linux/development/architecture.md)
+        - tool
+          - [dumpimage](document/option_system/kernel/linux/development/tool/dumpimage.md)
+          - [mkimage](document/option_system/kernel/linux/development/tool/mkimage.md)
+      - distro
+        - [ubuntu](document/option_system/kernel/linux/distro/ubuntu.md)
+      - shell
+        - [bash](document/option_system/kernel/linux/shell/bash.md)
+    - windows
+      - [windows](document/option_system/kernel/windows/windows.md)
 - tool
   - [7zip](document/tool/7zip.md)
   - [beyond_compare](document/tool/beyond_compare.md)
   - [docsify](document/tool/docsify.md)
-  - [vmware](document/tool/vmware.md)
+  - [virtual_machine](document/tool/virtual_machine.md)
   - [vpn](document/tool/vpn.md)
