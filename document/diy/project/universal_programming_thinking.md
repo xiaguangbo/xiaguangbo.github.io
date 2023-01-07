@@ -19,6 +19,9 @@
         调用：“操作对象_操作”，例如 data_receive
         事件：“操作对象_操作_事件”，例如 data_receive_complete
         回调：“操作对象_操作_回调”，例如 frontEnd_backcall、frontEnd_thread、
+
+一些常用的单词
+    传输：transfer
 ```
 
 ## 编程路线和结构组织
