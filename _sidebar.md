@@ -31,6 +31,7 @@
   - software
     - framework
       - [uno_platform](document/development/software/framework/uno_platform.md)
+      - [wpf](document/development/software/framework/wpf.md)
       - [跨平台软件开发](document/development/software/framework/跨平台软件开发.md)
     - tool
       - [compiler_explorer](document/development/software/tool/compiler_explorer.md)

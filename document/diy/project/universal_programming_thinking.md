@@ -1,18 +1,28 @@
 ## 命名
 
 ```
-采用蛇形命名，也就是单词可以小写的就小写并用下划线隔开，例如 abc_def_ghi。
+总体命名规则：“隶属对象_操作对象_操作_事件/回调”，相当于树形图分类，意义在于尽可能用更少的单词来表达意思。
+使用分部命名法，每一个部分用下划线隔开，所有的单词统一小写，如果某一部分由多个单词组合，则第一个单词依然是小写，后续单词开头字母用大写，比如 abc_abcAbc_abcAbcAbc。
 
-单词组织
-    对外接口：
-        直接使用的接口：“本体类别_本名_操作对象_动作”，相当于树形图分类，意义在于尽可能用更少的单词来表达意思，例如 driver_uart_data_transmit、driver_uart_data_receive、driver_uart_data_transmission。
-        事件、回调接口：“操作对象_动作”，例如 link_button_click。
+变量名：
+    对外：“隶属对象_操作对象”，例如 uart_data
+    对内：“操作对象”，例如 data
 
-    内部接口：“动作_操作对象”，例如 read_data。
+函数名：
+    分为调用、事件、回调，调用是；事件的特征是这个函数是被一个什么
+    对外：
+        调用：“隶属对象_操作对象_操作”，例如 uart_data_receive
+        事件：“隶属对象_操作对象_操作_事件”，例如 uart_data_receive_complete
+        回调：“隶属对象_操作对象_操作_回调”，例如 uart_frontEnd_backcall、uart_frontEnd_thread
+
+    对内：
+        调用：“操作对象_操作”，例如 data_receive
+        事件：“操作对象_操作_事件”，例如 data_receive_complete
+        回调：“操作对象_操作_回调”，例如 frontEnd_backcall、frontEnd_thread、
 ```
 
-## 结构组织
+## 编程路线和结构组织
 
 ```
-目的、功能、组件，目的只能调用功能，功能只能调用组件
+自上而下。目的、功能、组件，目的只能调用功能，功能只能调用组件
 ```
