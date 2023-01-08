@@ -1,27 +1,25 @@
 ## 命名
 
 ```
-总体命名规则：“隶属对象_操作对象_操作_事件/回调”，相当于树形图分类，意义在于尽可能用更少的单词来表达意思。
+总体命名规则：“隶属对象_操作对象_操作_修饰_事件/回调”，相当于树形图分类，意义在于尽可能用更少的单词来表达完整的意思。需要给外部调用的则写全称，给内部调用的去掉“隶属对象_”这部分，如果内部调用的隐藏方法为避免混淆则依然用全称。
 使用分部命名法，每一个部分用下划线隔开，所有的单词统一小写，如果某一部分由多个单词组合，则第一个单词依然是小写，后续单词开头字母用大写，比如 abc_abcAbc_abcAbcAbc。
 
-变量名：
-    对外：“隶属对象_操作对象”，例如 uart_data
-    对内：“操作对象”，例如 data
-
-函数名：
-    分为调用、事件、回调，调用是；事件的特征是这个函数是被一个什么
-    对外：
-        调用：“隶属对象_操作对象_操作”，例如 uart_data_receive
-        事件：“隶属对象_操作对象_操作_事件”，例如 uart_data_receive_complete
-        回调：“隶属对象_操作对象_操作_回调”，例如 uart_frontEnd_backcall、uart_frontEnd_thread
-
-    对内：
-        调用：“操作对象_操作”，例如 data_receive
-        事件：“操作对象_操作_事件”，例如 data_receive_complete
-        回调：“操作对象_操作_回调”，例如 frontEnd_backcall、frontEnd_thread、
-
 一些常用的单词
-    传输：transfer
+    操作对象：
+        数据：data、缓冲：buffer、缓存：cache、按钮：button
+        buffer 和 cache 的区别：buffer 用于数据的存放和处理，无法舍弃；cache 用于加速，可以舍弃。
+
+    操作：
+        接收：receive、发送：transmit、传输：transmission、连接：connection
+        
+    修饰：
+        开始或停止：startOrStop
+
+    事件：
+        完成：complete、点击：click
+
+    回调：
+        被调：backcall、线程：thread、任务：task
 ```
 
 ## 编程路线和结构组织
