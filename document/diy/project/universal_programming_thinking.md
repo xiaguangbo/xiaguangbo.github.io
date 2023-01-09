@@ -1,30 +1,20 @@
-具体情况具体分析，禁止把类似的事情看成一样的
+具体情况具体分析
 
 ## 命名与分类
 
 ```
-使用分部命名法，每一个部分用下划线隔开，所有的单词统一小写，如果某一部分由多个单词组合，则第一个单词依然是小写，后续单词开头字母用大写，比如 abc_abcAbc_abcAbcAbc。
+使用分部命名法，每一个部分用下划线隔开，所有的单词统一小写，如果某一部分由多个单词组合则不用下划线分开，而是第一个单词小写，后续单词开头字母用大写，比如 abc_abcAbc_abcAbcAbc。顺序是 隶属对象_作用_分支_事件/被调。
 
-总体命名规则：“隶属对象_操作对象_事件/被调_行为_修饰”，例如 mainWindow_button_click_connection_startOrStop，相当于树形图分类，意义在于尽可能用更少的单词来表达完整的意思，其次从左到右看尽量少的单词就能理解意思，并且能规整的分类。需要给外部调用的则写全称，给内部调用的去掉“隶属对象_”这部分，如果内部调用的隐藏方法为避免混淆则依然用全称，具体情况具体分析。
-
-关于文件内的对象则不管哪些 button 是干什么的，全部放一起。关于文件分类则相反，要考虑移植和查找，要把紧密联系的文件放一起，达到拖一个文件夹就能移植的效果，不能把某些类型一样的文件归类到一个文件夹里，比如把源文件放一起，头文件放一起这样，有些对象没有源文件还让人去源文件夹里找，这不闹心吗。
-
-一些常用的单词
-    操作对象：
-        数据：data、缓冲：buffer、缓存：cache、按钮：button
-        buffer 和 cache 的区别：buffer 用于数据的存放和处理，无法舍弃；cache 用于加速，可以舍弃。
-
-    行为：
-        接收：receive、发送：transmit、传输：transmission、连接：connection
-        
-    修饰：
-        开始或停止：startOrStop
-
-    事件：
-        完成：complete、点击：click
-
-    被调：
-        回调：backcall、线程：thread、任务：task
+class uart
+{
+private:
+    enum state{...};
+    Thread receive_thread_thread;
+public:
+    state init();
+    void receive_thread();
+    void receive_complete(void (p*)());
+};
 ```
 
 ## 编程路线和结构组织
