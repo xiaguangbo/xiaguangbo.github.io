@@ -31,7 +31,10 @@
   - software
     - framework
       - [uno_platform](document/development/software/framework/uno_platform.md)
-      - [wpf](document/development/software/framework/wpf.md)
+      - wpf
+        - [mvvm](document/development/software/framework/wpf/mvvm.md)
+        - [控件](document/development/software/framework/wpf/控件.md)
+        - [编程方法](document/development/software/framework/wpf/编程方法.md)
       - [跨平台软件开发](document/development/software/framework/跨平台软件开发.md)
     - tool
       - [compiler_explorer](document/development/software/tool/compiler_explorer.md)
@@ -40,6 +43,7 @@
       - [node](document/development/software/tool/node.md)
       - [python](document/development/software/tool/python.md)
       - [vim](document/development/software/tool/vim.md)
+      - [vs](document/development/software/tool/vs.md)
       - [vscode](document/development/software/tool/vscode.md)
       - [yarn](document/development/software/tool/yarn.md)
 - diy

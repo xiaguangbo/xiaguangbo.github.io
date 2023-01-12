@@ -1,3 +1,5 @@
+vmware 比 virtualbox 流畅多了，但需要安装 VMWare Tools，会提示的
+
 ## virtualbox
 
 ### 双向拖拽
@@ -6,6 +8,13 @@
 不能拖拽单文件，必须要放在文件夹里，拖拽文件夹
 
 除了要勾选，还要安装增强功能，点击后在资源管理器找到该光盘并安装，重启虚拟机里的系统
+```
+
+### vdi 和 vmdk 互转
+
+```
+vmdk 转 vdi：VBoxManage clonehd source.vmdk target.vdi --format VDI
+vdi 转 vmdk：VBoxManage clonehd source.vdi target.vmdk --format VMDK
 ```
 
 ### 问题
