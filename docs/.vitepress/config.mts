@@ -1,28 +1,36 @@
 import { defineConfig } from 'vitepress'
+import { getSidebarData, getNavData } from './nav_sidebar.mts'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  head: [["link", { rel: "icon", href: "/logo.svg" }]], // 网页标签栏图标
+  title: "泽生电气", // 顶部的 Home 名
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    logo: '/logo.svg', // 顶部的 Home 图标
+    nav: getNavData(), // 顶部的导航栏
+    sidebar: getSidebarData(), // 侧边栏
+    socialLinks: [{ icon: 'github', link: 'https://github.com/xiaguangbo/xiaguangbo.github.io' }],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // 搜索框
+    search: {
+      provider: "local",
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索",
+          },
+          modal: {
+            displayDetails: "展开",
+            resetButtonTitle: "清除",
+            noResultsText: "未找到",
+            footer: {
+              navigateText: "切换",
+              selectText: "选择",
+              closeText: "关闭"
+            },
+          },
+        },
+      },
+    },
   }
 })
