@@ -17,7 +17,7 @@ export default defineConfig({
     },
 
     outline: {
-      label: ' '
+      label: '标题栏'
     },
 
     returnToTopLabel: '回到顶部',

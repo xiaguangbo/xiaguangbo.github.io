@@ -2,7 +2,7 @@
 
 1. 安装 nodejs
 
-    fedora: `sudo dnf install nodejs`
+    fedora：`sudo dnf install nodejs`
 
 2. 创建文件夹
 

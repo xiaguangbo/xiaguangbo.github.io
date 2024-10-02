@@ -9,11 +9,8 @@ hero:
     src: /logo.svg # 首页大图标
 
 features:
-  - title: 1
-    details: 全电气化
-  - title: 2
-    details: 建立共和制
-  - title: 3
-    details: 解放世界
+  - title: 全电气化
+  - title: 建立共和制
+  - title: 解放世界
 ---
 
