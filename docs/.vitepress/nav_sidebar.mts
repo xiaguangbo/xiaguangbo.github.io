@@ -1,10 +1,13 @@
+// 文件夹或文件命名为 0-abc、1-bcd，序号用于排序。如果没有序号就使用原名
+//
 // username.github.io
 // | docs
 //   | articles
-//     | 1-abc // nav
-//       | 1-xyz // sidebar title
+//     | 0-abc // nav
+//       | xyz // subnav，sidebar title
 //         | asserts
 //           | abcd.png
+//         | index.md // subnav head page
 //         | a.md // sidebar subtitle
 //           ![](asserts/abcd.png) // import picture
 
@@ -12,9 +15,7 @@ import { resolve, join, sep } from 'path'
 import { readdirSync, statSync } from 'fs'
 import { DefaultTheme } from 'vitepress'
 
-// 匹配序号的正则
-// 文件夹或文件命名为 0-abc、1-bcd，序号用于排序
-const EXP_MATCH = /^\d+-.+/
+const EXP_MATCH = /^\d+-.+/ // 匹配序号的正则
 
 interface SidebarGenerateConfig {
   /**
@@ -129,6 +130,10 @@ function getSideBarItemTreeData(
         if (dirData.items) {
           dirData.collapsible = true
         }
+
+        // console.log('sidebar parent:')
+        // console.log(dirData)
+        // console.log('')
         result.push(dirData)
       }
     } else if (isMarkdownFile(fileOrDirName) && ignoreFileName !== fileOrDirName) {
@@ -141,7 +146,10 @@ function getSideBarItemTreeData(
         text,
         link: getDocsDirNameAfterStr(fileOrDirFullPath).replace('.md', '').replace(/\\/g, '/'),
       }
-
+      
+      // console.log('sidebar children:')
+      // console.log(fileData)
+      // console.log('')
       result.push(fileData)
     }
   })
@@ -185,7 +193,7 @@ function getNavDataArr(dirFullPath: string, level: number, maxLevel: number): De
       }
 
       if (level !== maxLevel) {
-        const arr = getNavDataArr(fileOrDirFullPath, level + 1, maxLevel).filter(v => v.text !== 'index.md')
+        const arr = getNavDataArr(fileOrDirFullPath, level + 1, maxLevel).filter(v => v.text !== 'index.md') // text 会报错，不用管
         if (arr.length > 0) {
           // @ts-ignore
           dirData.items = arr
@@ -194,6 +202,10 @@ function getNavDataArr(dirFullPath: string, level: number, maxLevel: number): De
       }
 
       dirData.activeMatch = link + '/'
+
+      // console.log('nav parent:')
+      // console.log(dirData)
+      // console.log('')
       result.push(dirData)
     } else if (isMarkdownFile(fileOrDirName)) {
       // 当前为文件
@@ -202,6 +214,10 @@ function getNavDataArr(dirFullPath: string, level: number, maxLevel: number): De
         link,
       }
       fileData.activeMatch = link + '/'
+      
+      // console.log('nav children:')
+      // console.log(fileData)
+      // console.log('')
       result.push(fileData)
     }
   })
