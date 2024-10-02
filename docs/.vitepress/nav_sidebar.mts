@@ -16,6 +16,9 @@ import { readdirSync, statSync } from 'fs'
 import { DefaultTheme } from 'vitepress'
 
 const EXP_MATCH = /^\d+-.+/ // 匹配序号的正则
+const BEGIN_DIR = 'articles'
+const IGNORE_MD_FILE = 'index.md'
+const IGNORE_DIR = ['demo', 'asserts']
 
 interface SidebarGenerateConfig {
   /**
@@ -81,9 +84,9 @@ function getDocsDirNameAfterStr(dirOrFileFullName: string) {
 
 export function getSidebarData(sidebarGenerateConfig: SidebarGenerateConfig = {}) {
   const {
-    dirName = 'articles',
-    ignoreFileName = 'index.md',
-    ignoreDirNames = ['demo', 'asserts'],
+    dirName = BEGIN_DIR,
+    ignoreFileName = IGNORE_MD_FILE,
+    ignoreDirNames = IGNORE_DIR,
   } = sidebarGenerateConfig
 
   // 获取目录的绝对路径
