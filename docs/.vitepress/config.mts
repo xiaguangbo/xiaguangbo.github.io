@@ -21,8 +21,8 @@ export default defineConfig({
     },
 
     returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
+    sidebarMenuLabel: '文章栏',
+    darkModeSwitchLabel: '主题深浅色切换',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
 
