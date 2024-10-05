@@ -9,9 +9,9 @@ hero:
     src: /logo.svg # 首页大图标
 
 features:
-  - title: 梦想夏乡labs
-  - title: 全电气化
-  - title: 共和化
+  - title: 梦想夏乡Labs
+  - title: 全统一系统化电气化
+  - title: 先进调度互助共和化
   - title: 解放世界
 ---
 
