@@ -2,13 +2,15 @@
 layout: home
 
 hero:
-  tagline: 当人们都那样去做的时候，才能说，最大的问题解决了
+  tagline: 道，泽生、盲龙
   image:
     src: /logo.svg
 
 features:
   - title: 电气化
-  - title: 共和制
+    link: /电气化.md
+  - title: 共和化
+    link: /共和化.md
   - title: 解放世界
+    link: /解放世界.md
 ---
-
