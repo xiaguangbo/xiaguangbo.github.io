@@ -2,7 +2,8 @@
 layout: home
 
 hero:
-  tagline: 道，泽生、盲龙
+  name: 梦想乡Labs
+  tagline: 道，泽生，盲龙
   image:
     src: /logo.svg
 

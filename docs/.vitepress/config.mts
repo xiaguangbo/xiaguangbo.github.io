@@ -3,7 +3,7 @@ import { getSidebarData, getNavData } from './nav_sidebar.mts'
 
 export default defineConfig({
   head: [["link", { rel: "icon", href: "/logo.svg" }]], // 浏览器标签栏网页图标
-  title: "Docs", // 顶部的 Home 名
+  title: "Docs", // 顶部的 Home 名，浏览器标签栏名
 
   themeConfig: {
     logo: '/logo.svg', // 顶部的 Home 图标
