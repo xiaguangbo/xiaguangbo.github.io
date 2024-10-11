@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: 梦想乡Labs
-  tagline: 道，泽生，盲龙
+  name: 梦想夏乡
+  tagline: 当人们都那样做的时候，就可以说，最大的问题解决了
   image:
     src: /logo.svg
 
