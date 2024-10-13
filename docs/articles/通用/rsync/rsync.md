@@ -1,6 +1,6 @@
 ## 简介
 
-默认使用文件大小和修改时间决定文件是否需要更新
+文件同步工具，支持本地硬盘、ssh。默认使用文件大小和修改时间决定文件是否需要更新
 
 ## 示例
 
@@ -32,3 +32,10 @@
 - `-l`：`--links, -l: copy symlinks as symlinks`
 - `-L`：`--copy-links, -L: transform symlink into referent file/dir`
 - `-p`：复制到目标的文件的所属用户保持和源一致
+
+
+## 问题
+
+- symlink has no referent
+
+  源文件里的链接的文件不存在。删除源文件的无效链接或者不管
