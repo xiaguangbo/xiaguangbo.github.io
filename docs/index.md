@@ -2,7 +2,8 @@
 layout: home
 
 hero:
-  name: 梦想夏乡
+  name: 安全第一
+  text: 从事实上改善环境
   tagline: 当人们都那样做的时候，就可以说，最大的问题解决了
   image:
     src: /logo.svg
