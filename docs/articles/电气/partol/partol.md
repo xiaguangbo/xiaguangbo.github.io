@@ -1,6 +1,6 @@
 ## 简介
 
-西门子 plc eda
+西门子 PLC IDE
 
 ## 电脑与 PLC 的连接
 
