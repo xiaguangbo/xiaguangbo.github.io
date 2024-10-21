@@ -9,7 +9,7 @@ hero:
     src: /logo.svg
 
 features:
-  - title: 泽生、盲龙
+  - title: 泽生、盲龙、缘份
   - title: 真理
   - title: 大解放
 ---
