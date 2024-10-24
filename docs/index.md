@@ -10,6 +10,6 @@ hero:
 
 features:
   - title: 泽生、盲龙、缘份
-  - title: 真理
-  - title: 大解放
+  - title: 真理、主要矛盾
+  - title: 大解放、全自动化系统化
 ---
