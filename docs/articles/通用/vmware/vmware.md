@@ -16,8 +16,10 @@
     ```
 
     ```sh
-    sudo dnf install kernel-devel kernel-headers gcc gcc-c++ make git
+    sudo dnf install kernel-devel gcc gcc-c++ make
     ```
+
+    如果启动后直接提示`install`也没有让选什么东西的路径就不需要下面的步骤
 
     ```sh
     git clone https://github.com/bytium/vm-host-modules.git
