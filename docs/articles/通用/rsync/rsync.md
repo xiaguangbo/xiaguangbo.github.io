@@ -14,7 +14,7 @@
 
   因为安卓的原因，rsync 无法复制链接到安卓里，所以这里将链接替换成真实文件。而且文件所属用户也会被改成安卓里的 `root evrybordy`，但这没事，当同步回电脑时会自动改到调用 rsync 的用户
 
-  windows 需要安装 msys2，然后更改为清华源，执行`pacman -S rsync openssh`。即使 windows 在虚拟机里用 NAT 网络也可以，可以使用`ping`来测试是否能连接到手机
+  windows 需要安装 msys2，然后更改为清华源，执行`pacman -S rsync openssh`。即使 windows 在虚拟机里用 NAT 网络也可以，可以使用`ping`来测试是否能连接到手机，或者手机使用 usb 连接虚拟机并开启 rndis/网络共享，这样虚拟机也能连接手机
 
   linux 同步到手机：`rsync -rLtgoDvziPh --delete -e 'ssh -p 2222' /home/xiaguangbo/linux 192.168.166.203:/sdcard/xiaguangbo`
 
