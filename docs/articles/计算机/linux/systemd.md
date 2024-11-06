@@ -4,4 +4,4 @@ systemctl ...
 para|des
 ---|---
 reboot|
-shutdown|
+poweroff|
