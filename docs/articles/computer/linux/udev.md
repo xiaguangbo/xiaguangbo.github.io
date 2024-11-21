@@ -1,26 +1,30 @@
 ## udev
 
 - 属性
-`KERNEL=="ttyUSB0"`、`SUBSYSTEM=="tty"`、`ATTRS{idVendor}=="1a86"` 这些都是属性，是用来匹配有这些属性的设备的
+
+  `KERNEL=="ttyUSB0"`、`SUBSYSTEM=="tty"`、`ATTRS{idVendor}=="1a86"` 这些都是属性，是用来匹配有这些属性的设备的
 
 - 操作
-`SYMLINK+="ttyUSB_A"`：再添加一个 `/dev/ttyUSB_A` 的链接指向这个 ttyusb
-`MODE="0666"`：权限为 0666
-`OWNER="abc"`：所属用户为 abc
+
+  `SYMLINK+="ttyUSB_A"`：再添加一个 `/dev/ttyUSB_A` 的链接指向这个 ttyusb
+  `MODE="0666"`：权限为 0666
+  `OWNER="abc"`：所属用户为 abc
 
 ## 示例
 
 usb 串口需要权限才能使用
 
 这个的意思是对于同时有 `SUBSYSTEM=="tty"` 和 `SUBSYSTEMS=="usb"` 属性的设备，其所属用户为 abc，这样就不用把该用户加到 `dialout` 用户组也能使用这个设备
-```
+
+```sh
 cat << EOF | sudo tee /etc/udev/rules.d/50-usb-serial.rules
 SUBSYSTEM=="tty", SUBSYSTEMS=="usb", OWNER="abc"
 EOF
 ```
 
 或者
-```
+
+```sh
 cat << EOF | sudo tee /etc/udev/rules.d/50-usb-serial.rules
 KERNEL=="ttyUSB*", MODE="0666"
 KERNEL=="ttyACM*", MODE="0666"
@@ -29,7 +33,8 @@ EOF
 
 ## 查看属性信息
 
-查看一个 usb 转串口的设备的信息 `udevadm info -a /dev/ttyUSB0`：
+查看一个 usb 转串口的设备的信息 `udevadm info -a /dev/ttyUSB0`
+
 ```
 Udevadm info starts with the device specified by the devpath and then
 walks up the chain of parent devices. It prints for every device

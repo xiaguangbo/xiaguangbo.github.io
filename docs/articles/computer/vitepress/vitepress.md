@@ -6,54 +6,54 @@
 
 1. 安装 nodejs
 
-   fedora：`sudo dnf install nodejs`
+  fedora：`sudo dnf install nodejs`
 
 2. 创建文件夹
 
-   ```sh
-   mkdir username.github.io
-   cd username.github.io
-   ```
+  ```sh
+  mkdir username.github.io
+  cd username.github.io
+  ```
 
-   和仓库名保持一致。名称格式推荐用`username.github.io`，这样在访问页面时只需要用`https://username.github.io`，不用再加仓库名
+  和仓库名保持一致。名称格式推荐用`username.github.io`，这样在访问页面时只需要用`https://username.github.io`，不用再加仓库名
 
-   `username`：github 账号用户名
+  `username`：github 账号用户名
 
 3. 初始化
 
-   ```sh
-   npm add -D vitepress
-   npx vitepress init
-   ```
+  ```sh
+  npm add -D vitepress
+  npx vitepress init
+  ```
 
 4. 本地预览
 
-   ```sh
-   npm run docs:dev
-   ```
+  ```sh
+  npm run docs:dev
+  ```
 
 ## 自动生成导航栏和侧边栏
 
 1. 安装 node 库
 
-   ```sh
-   npm install -D @types/node
-   ```
+  ```sh
+  npm install -D @types/node
+  ```
 
 2. 添加 `docs/.vitepress/nav_sidebar.mts`
 
-   参考仓库文件
+  参考仓库文件
 
 3. 修改 `docs/.vitepress/config.mts`
 
-   ```js
-   import { getSidebarData, getNavData } from './nav_sidebar.mts'
+  ```js
+  import { getSidebarData, getNavData } from './nav_sidebar.mts'
 
-   ...
+  ...
 
-   nav: getNavData(), // 顶部的导航栏
-   sidebar: getSidebarData(), // 侧边栏
-   ```
+  nav: getNavData(), // 顶部的导航栏
+  sidebar: getSidebarData(), // 侧边栏
+  ```
 
 ## 搜索框
 
@@ -67,37 +67,37 @@
 
 1. 添加 `.gitignore`
 
-   参考仓库文件
+  参考仓库文件
 
-   忽略不需要上传的文件夹和文件
+  忽略不需要上传的文件夹和文件
 
 2. 添加 `.github/workflows/deploy.yml`
 
-   参考仓库文件
+  参考仓库文件
 
-   github CI 脚本。自动编译，无需本地编译
+  github CI 脚本。自动云编译，无需本地编译
 
 3. 创建 github 仓库
 
-   仓库名格式使用`username.github.io`
+  仓库名格式使用`username.github.io`
 
 4. 上传
 
-   ```sh
-   echo "# username.github.io" >> README.md
-   git init
-   git add README.md
-   git commit -m "first commit"
-   git branch -M main
-   git remote add origin https://github.com/username/username.github.io.git
-   git push -u origin main
-   ```
+  ```sh
+  echo "# username.github.io" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin https://github.com/username/username.github.io.git
+  git push -u origin main
+  ```
 
-   不熟悉 git 的建议一行一行的执行，避免出现问题时不知道是哪一行有问题
+  不熟悉 git 的建议一行一行的执行，避免出现问题时不知道是哪一行有问题
 
 5. 设置 Pages
 
-   在`Settings/Pages/Build and deployment/Source`里选择 GitHub Actions。使用 CI 输出的文件
+  在`Settings/Pages/Build and deployment/Source`里选择 GitHub Actions。使用 CI 输出的文件
 
 ## 问题
 
