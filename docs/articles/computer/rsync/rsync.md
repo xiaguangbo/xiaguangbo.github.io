@@ -6,7 +6,7 @@
 
 - 本地同步
 
-  `rsync -avziPh --delete ~/abc ~/123`，会在`123`里看到`abc`，并删除`~/123/abc`里有的但`~/abc`里没有的文件，相当于是`~/123/abc`是`~/abc`的镜像
+  `rsync -avziPh --delete ~/abc ~/123`，会在`123`里看到`abc`，并删除`~/123/abc`里有的但`~/abc`里没有的文件，相当于是`~/123/abc`是`~/abc`的镜像。不影响`123`里的其他文件和文件夹
 
 - linux、windows 与手机同步
 
