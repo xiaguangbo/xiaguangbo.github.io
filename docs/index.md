@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 皇
+  name: 泽生
   text: 生命力
   tagline: 当人们都去那样做的时候，才可以说，最大的问题解决了
   image:
