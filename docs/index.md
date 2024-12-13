@@ -9,6 +9,6 @@ hero:
     src: /logo.svg
 
 features:
-  - title: ASAS
-    details: 全社会自动化体系。没有压迫，没有剥削，人人平等，共同富裕
+  - title: WAS
+    details: 世界自动化系统。没有压迫，没有剥削，人人平等，共同富裕，实业兴邦，保护环境，探索未来
 ---
