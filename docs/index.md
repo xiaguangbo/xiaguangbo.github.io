@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: 泽生
-  text: 主观能动性
-  tagline: 梦想夏乡project
+  text: 盲龙
+  tagline: 主观能动性，梦想夏乡project
   image:
     src: /logo.svg
 
