@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: 泽生
-  tagline: 梦想夏乡project
+  tagline: 梦想夏乡myproject
   image:
     src: /logo.svg
 
