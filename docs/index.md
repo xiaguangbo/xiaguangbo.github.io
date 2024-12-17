@@ -27,8 +27,8 @@ features:
   - title: WAS.SGPGPU
     details: 标准通用计算图形处理器
 
-  - title: WAS.SPAB
-    details: 标准协议与总线
+  - title: WAS.SCPABAWAWL
+    details: 标准通信协议与总线与有线与无线
 
   - title: WAS.SM
     details: 标准机器
