@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 泽生
+  name: x
   tagline: WAS，世界自动化体系。科学、标准、优雅、快速、精准、统一、通用、模块化、分布式、安全完备、无限扩展、无限兼容，适用于任何生产生活需求
   image:
     src: /logo.svg
