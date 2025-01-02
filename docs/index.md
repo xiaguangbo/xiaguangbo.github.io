@@ -3,11 +3,15 @@ layout: home
 
 hero:
   name: x
-  tagline: WAS，世界自动化体系。科学、标准、优雅、快速、精准、统一、通用、模块化、分布式、安全完备、无限扩展、无限兼容，适用于任何生产生活需求
+  text: 泽生
+  tagline: 要有我们自己的以人为本的共产主义的教育业、科学业、工业、农业、医疗、商业
   image:
     src: /logo.svg
 
 features:
+  - title: WAS
+    details: 世界自动化体系。科学、标准、优雅、快速、精准、统一、通用、模块化、分布式、安全完备、无限扩展、无限兼容，适用于任何生产生活需求
+
   - title: WAS.MXXX
     details: 梦想夏乡
 
